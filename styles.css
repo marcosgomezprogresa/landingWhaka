@@ -208,7 +208,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .logo-text {
-    height: 75px;
+    height: 90px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
@@ -219,7 +219,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .header.scrolled .logo-text {
-    height: 60px;
+    height: 70px;
 }
 
 /* ===================================
@@ -1299,7 +1299,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-text {
-        height: 52px;
+        height: 60px;
     }
 }
 
@@ -1345,7 +1345,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-text {
-        height: 45px;
+        height: 50px;
     }
 
     .whatsapp-float svg {
