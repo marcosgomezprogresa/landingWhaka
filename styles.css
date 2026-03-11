@@ -205,8 +205,6 @@ a.btn-primary:not(.form-card .btn-primary) {
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
-    background: transparent;
-    mix-blend-mode: darken;
 }
 
 .logo-text {
@@ -214,8 +212,6 @@ a.btn-primary:not(.form-card .btn-primary) {
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
-    background: transparent;
-    mix-blend-mode: darken;
 }
 
 .header.scrolled .logo-icon {

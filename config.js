@@ -5,8 +5,8 @@
 
 const landingConfig = {
     // ============ INFORMACIÓN GENERAL ============
-    logoIcon: 'images/logowhaka.png', // Logo icono Whaka
-    logoText: 'images/whakanombre.png', // Logo texto Whaka
+    logoIcon: 'images/logosinfondo.png', // Logo icono Whaka
+    logoText: 'images/whakanombresinfondo.png', // Logo texto Whaka
     
     // ============ COLORES DE MARCA WAKA ============
     colors: {
