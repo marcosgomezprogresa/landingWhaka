@@ -644,6 +644,73 @@ a.btn-primary:not(.form-card .btn-primary) {
     margin-top: -0.5rem;
 }
 
+/* Flecha apuntando al formulario */
+.form-arrow {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.form-arrow svg {
+    width: 40px;
+    height: 40px;
+    color: white;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Botón de llamar debajo de privacidad */
+.form-phone-cta {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.form-phone-cta p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
+.phone-link-alt {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.phone-link-alt:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.phone-link-alt .phone-icon {
+    width: 22px;
+    height: 22px;
+}
+
 .form-success {
     text-align: center;
     padding: 2rem;
