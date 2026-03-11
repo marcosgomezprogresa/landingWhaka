@@ -658,7 +658,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     height: 40px;
     color: rgba(255, 255, 255, 0.95);
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
 }
 
 @keyframes bounce {
