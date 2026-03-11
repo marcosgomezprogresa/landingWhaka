@@ -653,6 +653,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     width: 100%;
     margin-bottom: 1rem;
     animation: bounce 2s ease-in-out infinite;
+    text-align: center;
 }
 
 .form-arrow svg {
@@ -660,6 +661,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     height: 40px;
     color: rgba(255, 255, 255, 0.95);
     filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+    margin: 0 auto;
+    display: block;
 }
 
 @keyframes bounce {
