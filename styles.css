@@ -197,27 +197,29 @@ a.btn-primary:not(.form-card .btn-primary) {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 1rem;
 }
 
 .logo-icon {
-    height: 85px;
+    height: 95px;
     width: auto;
     transition: all 0.3s ease;
+    filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.2));
 }
 
 .logo-text {
-    height: 65px;
+    height: 75px;
     width: auto;
     transition: all 0.3s ease;
+    filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
 }
 
 .header.scrolled .logo-icon {
-    height: 70px;
+    height: 75px;
 }
 
 .header.scrolled .logo-text {
-    height: 55px;
+    height: 60px;
 }
 
 /* ===================================
@@ -1293,11 +1295,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-icon {
-        height: 60px;
+        height: 65px;
     }
     
     .logo-text {
-        height: 48px;
+        height: 52px;
     }
 }
 
@@ -1339,11 +1341,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-icon {
-        height: 52px;
+        height: 55px;
     }
     
     .logo-text {
-        height: 42px;
+        height: 45px;
     }
 
     .whatsapp-float svg {
