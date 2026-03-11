@@ -477,9 +477,6 @@ a.btn-primary:not(.form-card .btn-primary) {
 .hero-form {
     position: sticky;
     top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .form-card {
@@ -652,18 +649,15 @@ a.btn-primary:not(.form-card .btn-primary) {
 .form-arrow {
     display: flex;
     justify-content: center;
-    margin-bottom: -15px;
-    position: relative;
-    z-index: 10;
+    margin-bottom: 1rem;
     animation: bounce 2s ease-in-out infinite;
-    width: 100%;
 }
 
 .form-arrow svg {
-    width: 50px;
-    height: 50px;
-    color: white;
-    filter: drop-shadow(0 3px 10px rgba(0, 0, 0, 0.4));
+    width: 40px;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
 @keyframes bounce {
