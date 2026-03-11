@@ -203,15 +203,11 @@ a.btn-primary:not(.form-card .btn-primary) {
 .logo-icon {
     height: 60px;
     width: auto;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
 }
 
 .logo-text {
     height: 45px;
     width: auto;
-    transition: all 0.3s ease;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
 }
 
 .header.scrolled .logo-icon {
@@ -220,12 +216,6 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .header.scrolled .logo-text {
     height: 38px;
-}
-
-.logo:hover .logo-icon,
-.logo:hover .logo-text {
-    transform: scale(1.05) translateY(-2px);
-    filter: drop-shadow(0 4px 12px rgba(123, 44, 191, 0.3));
 }
 
 /* ===================================
