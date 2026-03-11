@@ -173,19 +173,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0);
     z-index: 1000;
-    padding: 1.2rem 0;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
 }
 
 .header.scrolled {
-    padding: 0.8rem 0;
+    padding: 1rem 0;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
 }
 
 .header-container {
@@ -198,32 +197,27 @@ a.btn-primary:not(.form-card .btn-primary) {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.8rem;
-    transition: transform 0.3s ease;
-}
-
-.logo:hover {
-    transform: translateY(-2px);
+    gap: 0.75rem;
 }
 
 .logo-icon {
-    height: 55px;
+    height: 75px;
     width: auto;
     transition: all 0.3s ease;
 }
 
 .logo-text {
-    height: 42px;
+    height: 55px;
     width: auto;
     transition: all 0.3s ease;
 }
 
 .header.scrolled .logo-icon {
-    height: 48px;
+    height: 65px;
 }
 
 .header.scrolled .logo-text {
-    height: 36px;
+    height: 48px;
 }
 
 /* ===================================
@@ -1299,11 +1293,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-icon {
-        height: 42px;
+        height: 55px;
     }
     
     .logo-text {
-        height: 35px;
+        height: 42px;
     }
 }
 
@@ -1345,11 +1339,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .logo-icon {
-        height: 35px;
+        height: 48px;
     }
     
     .logo-text {
-        height: 30px;
+        height: 38px;
     }
 
     .whatsapp-float svg {
