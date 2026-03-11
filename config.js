@@ -16,7 +16,7 @@ const landingConfig = {
     
     // ============ SECCIÓN HERO ============
     hero: {
-        title: 'El poder del açaí premium',
+        title: 'El poder del açaí',
         highlight: 'directo a tu negocio', // Parte resaltada del título
         subtitle: 'Superfood de calidad excepcional para retailers, distribuidores y cadenas HORECA que buscan diferenciarse',
         
