@@ -991,7 +991,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     color: var(--text-light);
     line-height: 1.7;
     font-size: 1rem;
-}6px;
+}
+
+/* ===================================
+   TESTIMONIOS
+   =================================== */
+.testimonials {
+    background: var(--bg-white);
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 16px;
     padding: 2rem;
     box-shadow: var(--shadow-sm);
     border-left: 4px solid var(--primary-color);
@@ -1015,8 +1026,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 .testimonial-card:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-6px);
-    border-left-width: 6px
-    background: var(--bg-white);
+    border-left-width: 6px;
 }
 
 .testimonials-grid {
@@ -1076,23 +1086,9 @@ a.btn-primary:not(.form-card .btn-primary) {
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 0.25rem;
-}var(--gradient-secondary);
-    color: white;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 
-.cta-final::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(circle at 30% 50%, rgba(157, 78, 221, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 70% 50%, rgba(199, 125, 255, 0.15) 0%, transparent 50%)
+.testimonial-company {
     font-size: 0.9rem;
     color: var(--text-light);
 }
