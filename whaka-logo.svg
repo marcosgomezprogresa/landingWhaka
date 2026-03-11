@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- Máscara Tribal -->
+  <g transform="translate(10, 10)">
+    <circle cx="40" cy="40" r="38" fill="#5C4033" stroke="none"/>
+    <!-- Diseño simplificado de la máscara -->
+    <circle cx="40" cy="40" r="35" fill="none" stroke="#FFF" stroke-width="2"/>
+    <circle cx="25" cy="30" r="8" fill="#FFF"/>
+    <circle cx="25" cy="30" r="4" fill="#5C4033"/>
+    <circle cx="55" cy="30" r="8" fill="#FFF"/>
+    <circle cx="55" cy="30" r="4" fill="#5C4033"/>
+    <ellipse cx="40" cy="50" rx="18" ry="10" fill="none" stroke="#FFF" stroke-width="3"/>
+    <rect x="30" y="52" width="4" height="6" rx="2" fill="#FFF"/>
+    <rect x="36" y="52" width="4" height="6" rx="2" fill="#FFF"/>
+    <rect x="42" y="52" width="4" height="6" rx="2" fill="#FFF"/>
+    <rect x="48" y="52" width="4" height="6" rx="2" fill="#FFF"/>
+    <!-- Corona superior -->
+    <circle cx="20" cy="12" r="4" fill="#FFF"/>
+    <circle cx="40" cy="8" r="4" fill="#FFF"/>
+    <circle cx="60" cy="12" r="4" fill="#FFF"/>
+    <!-- Decoraciones laterales -->
+    <circle cx="8" cy="35" r="5" fill="#FFF"/>
+    <circle cx="72" cy="35" r="5" fill="#FFF"/>
+  </g>
+  
+  <!-- Texto Whaka -->
+  <text x="100" y="60" font-family="Arial Black, sans-serif" font-size="42" font-weight="900" fill="#5C4033" letter-spacing="-2">Whaka</text>
+</svg>

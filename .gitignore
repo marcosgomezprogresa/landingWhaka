@@ -1,0 +1,44 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos temporales
+*.log
+*.tmp
+*~
+
+# Node modules (si decides usar npm en el futuro)
+node_modules/
+package-lock.json
+
+# Archivos de configuración local
+config.local.js
+
+# Carpetas de build (si usas herramientas de build)
+dist/
+build/
+
+# Backups
+*.backup
+*.bak
+
+# Archivos grandes de imágenes sin procesar
+*.psd
+*.ai
+*.sketch
+
+# Archivos de cache
+.cache/
+.parcel-cache/
+
+# Documentos confidenciales del cliente
+*.pdf
+BRIEF-CLIENTE.md
+LEEME-PRIMERO.md
+QUICK-START.md
