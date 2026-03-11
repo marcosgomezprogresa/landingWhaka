@@ -477,6 +477,9 @@ a.btn-primary:not(.form-card .btn-primary) {
 .hero-form {
     position: sticky;
     top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form-card {
@@ -488,6 +491,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .form-card::before {
@@ -652,6 +656,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     position: relative;
     z-index: 10;
     animation: bounce 2s ease-in-out infinite;
+    width: 100%;
 }
 
 .form-arrow svg {
