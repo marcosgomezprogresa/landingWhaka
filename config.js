@@ -16,9 +16,9 @@ const landingConfig = {
     
     // ============ SECCIÓN HERO ============
     hero: {
-        title: 'El poder del açaí',
-        highlight: 'directo a tu negocio', // Parte resaltada del título
-        subtitle: 'Superfood de calidad excepcional para retailers, distribuidores y cadenas HORECA que buscan diferenciarse',
+        title: 'Distribuye Açaí Premium',
+        highlight: 'en tu Mercado', // Parte resaltada del título
+        subtitle: 'Fabricamos sorbetes de açaí y superfrutas listos para retail y horeca. Trabajamos con distribuidores, retailers y cadenas que buscan introducir productos con alta demanda y margen en su mercado.',
         
         // Estadísticas destacadas
         stats: [
@@ -38,16 +38,17 @@ const landingConfig = {
         
         // Beneficios con checkmark
         checks: [
-            'Açaí orgánico certificado de la Amazonía',
-            'Congelado IQF para máxima frescura',
-            'Listo para servir - máxima rentabilidad'
+            'Producto listo para retail y horeca',
+            'Fabricación y suministro internacional',
+            'Opciones de Private Label',
+            'Diferentes sabores y superfrutas'
         ]
     },
     
     // ============ FORMULARIO ============
     form: {
-        title: 'Solicita información comercial',
-        subtitle: 'Completa el formulario y nos pondremos en contacto',
+        title: 'Recibe el Catálogo y Condiciones de Distribución',
+        subtitle: 'Información comercial en menos de 24h',
         buttonText: 'ENVIAR →'
     },
     
