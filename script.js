@@ -52,6 +52,7 @@ function loadConfiguration() {
     updateElement('check1', config.hero.checks[0]);
     updateElement('check2', config.hero.checks[1]);
     updateElement('check3', config.hero.checks[2]);
+    updateElement('check4', config.hero.checks[3]);
     
     // Actualizar formulario
     updateElement('formTitle', config.form.title);

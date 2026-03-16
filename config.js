@@ -49,7 +49,7 @@ const landingConfig = {
     form: {
         title: 'Recibe el Catálogo y Condiciones de Distribución',
         subtitle: 'Información comercial en menos de 24h',
-        buttonText: 'ENVIAR →'
+        buttonText: 'Solicitar Catálogo →'
     },
     
     // ============ SECCIONES ============
