@@ -55,8 +55,8 @@ const landingConfig = {
     // ============ SECCIONES ============
     sections: {
         categories: {
-            title: 'Nuestra línea de productos Açaí',
-            subtitle: 'Soluciones premium para cada segmento de tu negocio'
+            title: 'Formatos para cada canal de distribución',
+            subtitle: 'Productos listos para retail, gourmet y horeca con márgenes competitivos'
         },
         benefits: {
             title: '¿Por qué elegir Waka Açaí?'
@@ -73,30 +73,30 @@ const landingConfig = {
     // ============ CATEGORÍAS / PRODUCTOS ============
     categories: [
         {
-            title: 'Açaí Bowl Premium',
-            description: 'Pulpa de açaí orgánico congelado IQF, listo para preparar los bowls más irresistibles',
+            title: 'Açaí listo para retail',
+            description: 'Productos diseñados para supermercados y tiendas especializadas. Formatos optimizados para maximizar la rotación en punto de venta combinando rentabilidad, precio competitivo y posicionamiento saludable.',
             image: 'images/açaiFotoPrinciapl10.jpeg',
             items: [
-                'Pulpa 100% pura sin azúcares añadidos',
-                'Congelación IQF para preservar antioxidantes',
-                'Presentaciones de 100g, 1kg y 10kg',
-                'Ideal para cafeterías, juice bars y restaurantes'
+                'Formatos individuales listos para venta',
+                'Ya funcionan en mercados internacionales',
+                'Preparados para distribución en retail',
+                'Alta rotación y márgenes competitivos'
             ]
         },
         {
-            title: 'Açaí Bowls Ready-to-Eat',
-            description: 'Bowls completos con toppings premium listos para servir',
+            title: 'Gama premium de superfrutas',
+            description: 'Formatos desarrollados para un posicionamiento más gourmet y saludable. Incluyen opciones con mayor valor nutricional y combinaciones con otras superfrutas.',
             image: 'images/açaiFoto1.jpeg',
             items: [
-                'Base de açaí + granola + frutas frescas',
-                'Presentación fotogénica #InstagramWorthy',
-                'Márgenes de 70-80% en retail',
-                'Rotación ultra rápida - producto de tendencia'
+                'Mayor valor nutricional',
+                'Combinaciones con otras superfrutas',
+                'Posicionamiento gourmet',
+                'Ideal para retailers que buscan diferenciarse'
             ]
         },
         {
-            title: 'Smoothie Packs & Batidos',
-            description: 'Combinaciones premium de açaí con superfoods',
+            title: 'Smoothie Packs Premium',
+            description: 'Combinaciones premium de açaí con superfoods diseñadas para maximizar el valor añadido en tu canal de distribución.',
             image: 'images/açaiDragonFruta9.jpeg',
             items: [
                 'Açaí + Dragon Fruit + Mango',
@@ -106,14 +106,14 @@ const landingConfig = {
             ]
         },
         {
-            title: 'Helados & Postres de Açaí',
-            description: 'Gelato y helados artesanales con açaí orgánico',
+            title: 'Formatos profesionales para horeca',
+            description: 'Envases de mayor tamaño diseñados para restauración, cafeterías, hoteles y food service. Pensados para optimizar costes y operativa en horeca.',
             image: 'images/heladoAçaiFoto8.jpeg',
             items: [
-                'Helado cremoso de açaí 100% natural',
-                'Sin colorantes ni conservantes',
-                'Textura suave y sabor equilibrado',
-                'Perfecto para heladerías y pastelerías premium'
+                'Perfectos para bowls de açaí',
+                'Ideales para smoothies y batidos',
+                'Postres saludables y menús healthy',
+                'Optimizan costes en food service'
             ]
         }
     ],
