@@ -75,7 +75,7 @@ const landingConfig = {
         {
             title: 'Açaí listo para retail',
             description: 'Productos diseñados para supermercados y tiendas especializadas. Formatos optimizados para maximizar la rotación en punto de venta combinando rentabilidad, precio competitivo y posicionamiento saludable.',
-            image: 'images/açaiFotoPrinciapl10.jpeg',
+            image: 'images/açaí bowl.png',
             items: [
                 'Formatos individuales listos para venta',
                 'Ya funcionan en mercados internacionales',
@@ -86,7 +86,7 @@ const landingConfig = {
         {
             title: 'Gama premium de superfrutas',
             description: 'Formatos desarrollados para un posicionamiento más gourmet y saludable. Incluyen opciones con mayor valor nutricional y combinaciones con otras superfrutas.',
-            image: 'images/açaiFoto1.jpeg',
+            image: 'images/açaí bowl strawberries.png',
             items: [
                 'Mayor valor nutricional',
                 'Combinaciones con otras superfrutas',
@@ -108,7 +108,7 @@ const landingConfig = {
         {
             title: 'Formatos profesionales para horeca',
             description: 'Envases de mayor tamaño diseñados para restauración, cafeterías, hoteles y food service. Pensados para optimizar costes y operativa en horeca.',
-            image: 'images/heladoAçaiFoto8.jpeg',
+            image: 'images/picolé de açaí.png',
             items: [
                 'Perfectos para bowls de açaí',
                 'Ideales para smoothies y batidos',
