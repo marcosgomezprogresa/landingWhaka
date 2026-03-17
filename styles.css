@@ -1192,6 +1192,14 @@ a.btn-primary:not(.form-card .btn-primary) {
     margin-right: auto;
 }
 
+.cta-subtitle {
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    margin-bottom: 2rem !important;
+    opacity: 0.85;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+}
+
 /* ===================================
    FOOTER PREMIUM
    =================================== */

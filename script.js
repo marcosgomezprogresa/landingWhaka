@@ -66,6 +66,21 @@ function loadConfiguration() {
         updateElement('categoriesSubtitle', config.sections.categories.subtitle);
     }
     
+    // Cargar variedades
+    if (config.varieties && config.varieties.length > 0) {
+        loadVarieties(config.varieties);
+        updateElement('varietiesTitle', config.sections.varieties.title);
+        updateElement('varietiesSubtitle', config.sections.varieties.subtitle);
+    }
+    
+    // Cargar Private Label
+    if (config.privateLabel && config.privateLabel.services) {
+        loadPrivateLabel(config.privateLabel.services);
+        updateElement('privateLabelTitle', config.sections.privateLabel.title);
+        updateElement('privateLabelSubtitle', config.sections.privateLabel.subtitle);
+        updateElement('privateLabelDescription', config.sections.privateLabel.description);
+    }
+    
     // Cargar beneficios
     if (config.benefits && config.benefits.length > 0) {
         loadBenefits(config.benefits);
@@ -81,6 +96,8 @@ function loadConfiguration() {
     // Actualizar CTA final
     updateElement('ctaFinalTitle', config.sections.ctaFinal.title);
     updateElement('ctaFinalText', config.sections.ctaFinal.text);
+    updateElement('ctaFinalSubtitle', config.sections.ctaFinal.subtitle);
+    updateElement('ctaFinalButton', config.sections.ctaFinal.buttonText);
     
     // Actualizar footer
     updateElement('footerCompanyName', config.footer.companyName);
@@ -154,6 +171,46 @@ function loadCategories(categories) {
                 <p class="category-description">${category.description}</p>
                 ${itemsList}
             </div>
+        `;
+        
+        grid.appendChild(card);
+    });
+}
+
+function loadVarieties(varieties) {
+    const grid = document.getElementById('varietiesGrid');
+    if (!grid) return;
+    
+    grid.innerHTML = '';
+    
+    varieties.forEach(variety => {
+        const card = document.createElement('div');
+        card.className = 'variety-card fade-in';
+        
+        card.innerHTML = `
+            <div class="variety-icon">✓</div>
+            <h3 class="variety-name">${variety.name}</h3>
+            <p class="variety-description">${variety.description}</p>
+        `;
+        
+        grid.appendChild(card);
+    });
+}
+
+function loadPrivateLabel(services) {
+    const grid = document.getElementById('privateLabelGrid');
+    if (!grid) return;
+    
+    grid.innerHTML = '';
+    
+    services.forEach(service => {
+        const card = document.createElement('div');
+        card.className = 'private-label-card fade-in';
+        
+        card.innerHTML = `
+            <div class="private-label-icon">🏭</div>
+            <h3 class="private-label-service-title">${service.title}</h3>
+            <p class="private-label-service-description">${service.description}</p>
         `;
         
         grid.appendChild(card);

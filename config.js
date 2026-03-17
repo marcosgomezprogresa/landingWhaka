@@ -58,15 +58,26 @@ const landingConfig = {
             title: 'Formatos para cada canal de distribución',
             subtitle: 'Productos listos para retail, gourmet y horeca con márgenes competitivos'
         },
+        varieties: {
+            title: 'Diferentes sabores y superfrutas',
+            subtitle: 'Además del açaí, trabajamos con una gama de superfrutas y sabores complementarios que permiten ampliar la oferta de producto. Esto permite a distribuidores y retailers ofrecer una gama completa dentro de la categoría de superfoods.'
+        },
+        privateLabel: {
+            title: 'Desarrollo de Marca Propia (Private Label)',
+            subtitle: 'Somos especialistas en el desarrollo de marcas propias para distribuidores, retailers y cadenas internacionales.',
+            description: 'Ya fabricamos para grandes cadenas y marcas en diferentes mercados, ayudando a nuestros partners a lanzar productos competitivos dentro de la categoría de superfoods.'
+        },
         benefits: {
-            title: '¿Por qué elegir Waka Açaí?'
+            title: '¿Por qué trabajar con nosotros?'
         },
         testimonials: {
             title: 'Lo que dicen nuestros partners'
         },
         ctaFinal: {
-            title: '¿Listo para traer el açaí premium a tu mercado?',
-            text: 'Únete a las mejores cadenas y distribuidores que ya confían en Waka'
+            title: '¿Interesado en Distribuir Açaí en tu Mercado?',
+            text: 'Solicita el catálogo completo y la información de distribución',
+            subtitle: 'Trabajamos con distribuidores, importadores, retailers y cadenas horeca',
+            buttonText: 'Solicitar Catálogo y Precios'
         }
     },
     
@@ -118,30 +129,78 @@ const landingConfig = {
         }
     ],
     
+    // ============ VARIEDADES DE SUPERFRUTAS ============
+    varieties: [
+        {
+            name: 'Pitaya / Dragon Fruit',
+            description: 'Superfruit vibrante con alto valor visual'
+        },
+        {
+            name: 'Mezclas de superfrutas',
+            description: 'Combinaciones optimizadas para máxima demanda'
+        },
+        {
+            name: 'Combinaciones para smoothies',
+            description: 'Pre-formuladas para facilitar operativa'
+        },
+        {
+            name: 'Bowls completos',
+            description: 'Soluciones llave en mano para horeca'
+        }
+    ],
+
+    // ============ PRIVATE LABEL ============
+    privateLabel: {
+        services: [
+            {
+                title: 'Desarrollo de producto',
+                description: 'Formulaciones personalizadas según tu mercado'
+            },
+            {
+                title: 'Diseño de packaging',
+                description: 'Equipo de diseño especializado en retail'
+            },
+            {
+                title: 'Producción',
+                description: 'Capacidad industrial y escalable'
+            },
+            {
+                title: 'Escalabilidad internacional',
+                description: 'Experiencia en distribución global'
+            }
+        ]
+    },
+
     // ============ BENEFICIOS ============
     benefits: [
         {
-            title: 'Superfood con demanda creciente',
-            description: 'El açaí es el superfood número 1 en tendencia. Consumidores health-conscious buscan activamente productos con açaí. Alta rotación garantizada, especialmente en público millennial y Gen Z. Producto Instagram-ready que se vende solo.',
-            emoji: '📈',
+            title: 'Fabricación especializada en superfrutas',
+            description: 'Más de 15 años especializados en açaí y superfrutas. Dominamos toda la cadena: desde el sourcing en origen hasta el producto final listo para distribución. Tecnología de congelación IQF que preserva propiedades nutricionales.',
+            emoji: '🏭',
             icon: ''
         },
         {
-            title: 'Márgenes de hasta 80%',
-            description: 'El açaí permite posicionamiento premium con márgenes superiores a productos convencionales. Un açaí bowl cuesta producirlo 2-3€ y se vende entre 8-12€. Altísima rentabilidad en retail, HORECA y juice bars.',
-            emoji: '💰',
+            title: 'Experiencia internacional',
+            description: 'Distribuimos en más de 20 países. Conocemos las regulaciones, certificaciones y requisitos de cada mercado. Experiencia en importación, logística internacional y cumplimiento normativo.',
+            emoji: '🌍',
             icon: ''
         },
         {
-            title: 'Certificación orgánica & trazabilidad',
-            description: 'Açaí 100% orgánico certificado, cosechado sosteniblemente en la Amazonía brasileña. Trazabilidad completa del origen. Certificaciones USDA Organic, EU Organic. Cumple con todas las normativas sanitarias internacionales.',
-            emoji: '✅',
+            title: 'Productos ya posicionados en retail',
+            description: 'Nuestros productos ya están en las estanterías de grandes cadenas internacionales. Packaging optimizado para punto de venta, códigos de barras, etiquetado nutricional completo. Listo para retail desde día 1.',
+            emoji: '🛒',
             icon: ''
         },
         {
-            title: 'Soporte comercial completo',
-            description: 'Te ayudamos con recetas, formación de staff, materiales de marketing, estrategia de precios y positioning. Photoshoots profesionales de producto. Asesoría en montaje de açaí bar o corner. Acompañamiento end-to-end.',
-            emoji: '🤝',
+            title: 'Capacidad de Private Label',
+            description: 'Desarrollo completo de marca propia: desde la formulación hasta el packaging. Ya fabricamos para marcas líderes en diferentes mercados. Mínimos competitivos y escalabilidad garantizada.',
+            emoji: '🏷️',
+            icon: ''
+        },
+        {
+            title: 'Suministro estable',
+            description: 'Contratos directos con productores en Brasil. Stock permanente y capacidad de respuesta rápida. Logística optimizada para Europa y América. Nunca dejamos a nuestros partners sin producto.',
+            emoji: '📦',
             icon: ''
         }
     ],
