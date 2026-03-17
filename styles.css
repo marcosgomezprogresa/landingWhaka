@@ -1144,6 +1144,129 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 /* ===================================
+   VARIETIES / VARIEDADES
+   =================================== */
+.varieties {
+    background: var(--bg-white);
+    padding: 100px 0;
+}
+
+.varieties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.variety-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+}
+
+.variety-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.variety-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1.25rem;
+    background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.variety-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.variety-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* ===================================
+   PRIVATE LABEL
+   =================================== */
+.private-label {
+    background: linear-gradient(135deg, #F8F9FA 0%, #E9ECEF 100%);
+    padding: 100px 0;
+}
+
+.private-label-description {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    color: var(--text-light);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.private-label-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.private-label-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    border-top: 4px solid #7B2CBF;
+}
+
+.private-label-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.private-label-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 1.25rem;
+    background: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.private-label-service-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.private-label-service-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+/* ===================================
    CTA FINAL
    =================================== */
 /* ===================================
@@ -1387,7 +1510,9 @@ a.btn-primary:not(.form-card .btn-primary) {
 
     .categories-grid,
     .benefits-grid,
-    .testimonials-grid {
+    .testimonials-grid,
+    .varieties-grid,
+    .private-label-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1433,7 +1558,9 @@ a.btn-primary:not(.form-card .btn-primary) {
 
     .categories,
     .benefits,
-    .testimonials {
+    .testimonials,
+    .varieties,
+    .private-label {
         padding: 60px 0;
     }
 
