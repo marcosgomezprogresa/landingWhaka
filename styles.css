@@ -201,25 +201,25 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .logo-icon {
-    height: 70px;
+    height: 75px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.2));
 }
 
 .logo-text {
-    height: 130px;
+    height: 140px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
 }
 
 .header.scrolled .logo-icon {
-    height: 60px;
+    height: 65px;
 }
 
 .header.scrolled .logo-text {
-    height: 110px;
+    height: 120px;
 }
 
 /* ===================================
