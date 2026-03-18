@@ -27,7 +27,7 @@ const landingConfig = {
                 label: 'Açaí orgánico certificado'
             },
             {
-                number: '+15 años',
+                number: '+20 años',
                 label: 'Experiencia en el mercado'
             },
             {
