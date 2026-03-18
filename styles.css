@@ -461,12 +461,13 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .float-product {
-    width: 240px;
-    top: 20%;
-    right: 8%;
-    animation-delay: 1.5s;
-    opacity: 0.9;
-    filter: drop-shadow(0 15px 30px rgba(123, 44, 191, 0.5));
+    width: 180px;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 0s;
+    opacity: 0.95;
+    filter: drop-shadow(0 15px 30px rgba(123, 44, 191, 0.6));
     z-index: 10;
 }
 
