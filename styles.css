@@ -458,6 +458,15 @@ a.btn-primary:not(.form-card .btn-primary) {
     filter: drop-shadow(0 6px 12px rgba(123, 44, 191, 0.35));
 }
 
+.float-product {
+    width: 200px;
+    top: 50%;
+    right: 5%;
+    animation-delay: 1.5s;
+    opacity: 0.75;
+    filter: drop-shadow(0 15px 30px rgba(123, 44, 191, 0.4));
+}
+
 @keyframes float {
     0%, 100% {
         transform: translate(0, 0) rotate(0deg) scale(1);
