@@ -201,14 +201,14 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .logo-icon {
-    height: 75px;
+    height: 80px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.2));
 }
 
 .logo-text {
-    height: 140px;
+    height: 150px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
