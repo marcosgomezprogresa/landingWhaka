@@ -281,6 +281,8 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .hero-text {
     color: white;
+    position: relative;
+    z-index: 5;
 }
 
 .hero-title {
@@ -391,12 +393,12 @@ a.btn-primary:not(.form-card .btn-primary) {
     bottom: 0;
     pointer-events: none;
     overflow: hidden;
-    z-index: 0;
+    z-index: 2;
 }
 
 .float-element {
     position: absolute;
-    opacity: 0.6;
+    opacity: 0.3;
     animation: float 20s infinite ease-in-out;
 }
 
@@ -459,13 +461,13 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .float-product {
-    width: 220px;
+    width: 240px;
     top: 20%;
     right: 8%;
     animation-delay: 1.5s;
-    opacity: 0.85;
+    opacity: 0.9;
     filter: drop-shadow(0 15px 30px rgba(123, 44, 191, 0.5));
-    z-index: 2;
+    z-index: 10;
 }
 
 @keyframes float {
@@ -487,6 +489,8 @@ a.btn-primary:not(.form-card .btn-primary) {
 .hero-form {
     position: sticky;
     top: 100px;
+    position: relative;
+    z-index: 5;
 }
 
 .form-card {
