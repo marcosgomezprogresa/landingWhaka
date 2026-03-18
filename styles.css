@@ -175,13 +175,13 @@ a.btn-primary:not(.form-card .btn-primary) {
     right: 0;
     background: rgba(255, 255, 255, 0.98);
     z-index: 1000;
-    padding: 0.5rem 0;
+    padding: 0.3rem 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header.scrolled {
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
@@ -201,25 +201,25 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .logo-icon {
-    height: 95px;
+    height: 70px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.2));
 }
 
 .logo-text {
-    height: 180px;
+    height: 130px;
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
 }
 
 .header.scrolled .logo-icon {
-    height: 75px;
+    height: 60px;
 }
 
 .header.scrolled .logo-text {
-    height: 140px;
+    height: 110px;
 }
 
 /* ===================================
