@@ -122,52 +122,24 @@ const landingConfig = {
     // ============ VARIEDADES DE SUPERFRUTAS ============
     varieties: [
         {
-            name: 'Superfrutas premium',
-            description: 'Línea completa de superfrutas para ampliar el portafolio de producto',
-            items: [
-                'Guaraná - energizante natural presente en casi todas las líneas',
-                'Maracuyá - tropical y refrescante',
-                'Coco - cremoso y versatil',
-                'Fresa - clásico de alta demanda',
-                'Sandía - refrescante ideal para verano',
-                'Piña - tropical con excelente aceptación',
-                'Mix tropical - combinación lista para servir'
-            ]
+            icon: '🍇',
+            name: 'Superfrutas tropicales',
+            keywords: ['Guaraná', 'Maracuyá', 'Coco', 'Piña', 'Fresa', 'Sandía']
         },
         {
+            icon: '⚡',
             name: 'Mezclas funcionales',
-            description: 'Combinaciones Antiox y Detox con ingredientes premium',
-            items: [
-                'Uva - antioxidante natural',
-                'Beterraba - detox y energizante',
-                'Jengibre - propiedades funcionales',
-                'Kale - superfood verde',
-                'Pepino - refrescante y detox',
-                'Manzana - base versátil',
-                'Biomasa - fibra funcional',
-                'Fresa - antioxidante y sabor'
-            ]
+            keywords: ['Antiox', 'Detox', 'Superfoods', 'Biomasa', 'Jengibre']
         },
         {
-            name: 'Sabores regionales de Brasil',
-            description: 'Innovación auténtica para diferenciarse en el mercado',
-            items: [
-                'Tapioca con coco y leche condensado - postre brasileño auténtico',
-                'Cupuaçu trufado con chocolate - superfruit amazónico premium',
-                'Sabores exclusivos que aportan diferenciación',
-                'Experiencia brasileña real para el consumidor final'
-            ]
+            icon: '🇧🇷',
+            name: 'Sabores regionales',
+            keywords: ['Tapioca', 'Cupuaçu', 'Auténtico Brasil']
         },
         {
-            name: 'Soluciones para horeca y food service',
-            description: 'Formatos y mezclas diseñadas para operaciones profesionales',
-            items: [
-                'Formatos grandes: 3,6L, 5L, 10L ideales para alto volumen',
-                'Productos listos para servir que simplifican operativa',
-                'Mezclas para smoothies y bowls pre-formuladas',
-                'Bases optimizadas que reducen tiempo de preparación',
-                'Rentabilidad maximizada por porción servida'
-            ]
+            icon: '🍹',
+            name: 'Soluciones horeca',
+            keywords: ['3,6L', '5L', '10L', 'Listo para servir']
         }
     ],
 
