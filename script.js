@@ -85,6 +85,7 @@ function loadConfiguration() {
     if (config.benefits && config.benefits.length > 0) {
         loadBenefits(config.benefits);
         updateElement('benefitsTitle', config.sections.benefits.title);
+        updateElement('benefitsSubtitle', config.sections.benefits.subtitle);
     }
     
     // Cargar testimonios
@@ -234,12 +235,19 @@ function loadBenefits(benefits) {
         const card = document.createElement('div');
         card.className = 'benefit-card fade-in';
         
+        const itemsList = benefit.items && benefit.items.length > 0 
+            ? `<ul class="benefit-items">
+                ${benefit.items.map(item => `<li>${item}</li>`).join('')}
+               </ul>`
+            : '';
+        
         card.innerHTML = `
             <div class="benefit-icon">
                 ${benefit.icon ? `<img src="${benefit.icon}" alt="${benefit.title}">` : benefit.emoji || '📦'}
             </div>
             <h3 class="benefit-title">${benefit.title}</h3>
             <p class="benefit-description">${benefit.description}</p>
+            ${itemsList}
         `;
         
         grid.appendChild(card);
