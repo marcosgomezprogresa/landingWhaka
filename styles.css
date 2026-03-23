@@ -957,20 +957,22 @@ a.btn-primary:not(.form-card .btn-primary) {
     color: #4A5568;
     font-size: 0.85rem;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     transition: all 0.3s ease;
 }
 
 .category-card:hover .category-list li {
     padding: 0.5rem 0;
+    padding-left: 2rem;
 }
 
 .category-list li::before {
     content: '✓';
     color: #7B2CBF;
     position: absolute;
-    left: 0;
+    left: 0.25rem;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 /* ===================================
