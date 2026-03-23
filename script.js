@@ -207,10 +207,17 @@ function loadPrivateLabel(services) {
         const card = document.createElement('div');
         card.className = 'private-label-card fade-in';
         
+        const itemsList = service.items && service.items.length > 0 
+            ? `<ul class="private-label-items">
+                ${service.items.map(item => `<li>${item}</li>`).join('')}
+               </ul>`
+            : '';
+        
         card.innerHTML = `
-            <div class="private-label-icon">🏭</div>
+            <div class="private-label-icon">${service.icon || '🏭'}</div>
             <h3 class="private-label-service-title">${service.title}</h3>
             <p class="private-label-service-description">${service.description}</p>
+            ${itemsList}
         `;
         
         grid.appendChild(card);

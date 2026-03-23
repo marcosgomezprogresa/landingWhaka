@@ -1255,43 +1255,99 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .private-label-card {
     background: white;
-    border-radius: 16px;
-    padding: 2rem;
+    border-radius: 20px;
+    padding: 2.5rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    border-top: 4px solid #7B2CBF;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid rgba(123, 44, 191, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.private-label-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #7B2CBF 0%, #10B981 100%);
 }
 
 .private-label-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(123, 44, 191, 0.15);
+    border-color: rgba(123, 44, 191, 0.3);
 }
 
 .private-label-icon {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto 1.25rem;
-    background: linear-gradient(135deg, #7B2CBF 0%, #9D4EDD 100%);
-    border-radius: 14px;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+    border-radius: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    border: 2px solid rgba(123, 44, 191, 0.15);
+    transition: all 0.3s ease;
+}
+
+.private-label-card:hover .private-label-icon {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
 }
 
 .private-label-service-title {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.75rem;
-    color: var(--text-dark);
+    color: #240046;
     text-align: center;
+    background: linear-gradient(135deg, #7B2CBF 0%, #10B981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .private-label-service-description {
-    color: var(--text-light);
+    color: #4A5568;
     line-height: 1.6;
     font-size: 0.95rem;
     text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.private-label-items {
+    list-style: none;
+    margin-top: 1.5rem;
+    padding: 0;
+    text-align: left;
+}
+
+.private-label-items li {
+    padding: 0.75rem 0;
+    color: #4A5568;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid rgba(123, 44, 191, 0.08);
+}
+
+.private-label-items li:last-child {
+    border-bottom: none;
+}
+
+.private-label-items li::before {
+    content: '✓';
+    color: #7B2CBF;
+    position: absolute;
+    left: 0.25rem;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* ===================================

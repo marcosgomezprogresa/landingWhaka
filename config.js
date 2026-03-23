@@ -63,9 +63,9 @@ const landingConfig = {
             subtitle: 'Además del açaí, trabajamos con una gama de superfrutas y sabores complementarios que permiten ampliar la oferta de producto. Esto permite a distribuidores y retailers ofrecer una gama completa dentro de la categoría de superfoods.'
         },
         privateLabel: {
-            title: 'Desarrollo de Marca Propia (Private Label)',
+            title: '🏷️ Desarrollo de Marca Propia (Private Label)',
             subtitle: 'Somos especialistas en el desarrollo de marcas propias para distribuidores, retailers y cadenas internacionales.',
-            description: 'Ya fabricamos para grandes cadenas y marcas en diferentes mercados, ayudando a nuestros partners a lanzar productos competitivos dentro de la categoría de superfoods.'
+            description: 'Acompañamos a nuestros partners en todo el proceso, desde la formulación hasta la entrega final, con enfoque en calidad, escalabilidad y diferenciación.'
         },
         benefits: {
             title: '¿Por qué trabajar con nosotros?'
@@ -142,20 +142,44 @@ const landingConfig = {
     privateLabel: {
         services: [
             {
+                icon: '🧪',
                 title: 'Desarrollo de producto',
-                description: 'Formulaciones personalizadas según tu mercado'
+                description: 'Formulaciones personalizadas y flexibles',
+                items: [
+                    'Formulaciones personalizadas según el perfil de cada mercado: clásico, gourmet, funcional, sin azúcar, orgánico',
+                    'Amplia gama de formatos: 100g, 500ml, 1,02L, 3,6L, 5L, 10L',
+                    'Ingredientes diferenciados: açaí premium, guaraná, frutas tropicales, azúcar demerara orgánico, superfrutas'
+                ]
             },
             {
+                icon: '🎨',
                 title: 'Diseño de packaging',
-                description: 'Equipo de diseño especializado en retail'
+                description: 'Equipo especializado en retail y food service',
+                items: [
+                    'Equipo especializado en diseño para retail y food service',
+                    'Experiencia en co-branding con marcas reconocidas como Santa Helena® y Pacogel®',
+                    'Adaptación a estándares internacionales y certificaciones'
+                ]
             },
             {
-                title: 'Producción',
-                description: 'Capacidad industrial y escalable'
+                icon: '🏭',
+                title: 'Producción industrial',
+                description: 'Capacidad escalable con certificaciones internacionales',
+                items: [
+                    'Capacidad de producción de 4.200 litros/hora',
+                    'Plantas en São Paulo y Pará con capacidad de almacenamiento de hasta 1.050 toneladas',
+                    'Certificaciones internacionales: USDA Organic, Orgânico Brasil, IFS Global Markets'
+                ]
             },
             {
+                icon: '🌍',
                 title: 'Escalabilidad internacional',
-                description: 'Experiencia en distribución global'
+                description: 'Experiencia en grandes cadenas y distribución global',
+                items: [
+                    'Presencia en grandes cadenas: Walmart, Carrefour, Pão de Açúcar, Mercadinhos São Luiz, St Marche, entre otros',
+                    'Distribución propia en EE.UU. desde 2018 (Florida)',
+                    'Línea de exportación activa para múltiples mercados'
+                ]
             }
         ]
     },
