@@ -86,7 +86,7 @@ const landingConfig = {
         {
             title: 'Açaí listo para retail',
             description: 'Productos diseñados para supermercados y tiendas especializadas. Formatos optimizados para maximizar la rotación en punto de venta combinando rentabilidad, precio competitivo y posicionamiento saludable.',
-            image: 'images/producto retail.png',
+            image: 'images/productos retail.png',
             items: [
                 'Formatos individuales listos para venta',
                 'Ya funcionan en mercados internacionales',
@@ -97,7 +97,7 @@ const landingConfig = {
         {
             title: 'Gama gourmet',
             description: 'Formatos desarrollados para un posicionamiento más gourmet y saludable. Incluyen opciones con mayor valor nutricional y combinaciones con otras superfrutas.',
-            image: 'images/gama gourmet.png',
+            image: 'images/premiunimagen.png',
             items: [
                 'Mayor valor nutricional',
                 'Combinaciones con otras superfrutas',
