@@ -63,9 +63,9 @@ const landingConfig = {
             subtitle: 'Además del açaí, trabajamos con una gama de superfrutas y sabores complementarios que permiten ampliar la oferta de producto. Esto permite a distribuidores y retailers ofrecer una gama completa dentro de la categoría de superfoods.'
         },
         privateLabel: {
-            title: '🏷️ Desarrollo de Marca Propia (Private Label)',
-            subtitle: 'Somos especialistas en el desarrollo de marcas propias para distribuidores, retailers y cadenas internacionales.',
-            description: 'Acompañamos a nuestros partners en todo el proceso, desde la formulación hasta la entrega final, con enfoque en calidad, escalabilidad y diferenciación.'
+            title: 'Desarrollo de Marca Propia (Private Label)',
+            subtitle: 'Somos especialistas en el desarrollo de marcas propias para distribuidores, retailers, cadenas internacionales y empresas que buscan lanzar su propia línea de açaí y superfrutas.',
+            description: 'Contamos con infraestructura, certificaciones y experiencia real en producción para terceros. Acompañamos a nuestros partners en todo el proceso, desde la formulación hasta la entrega final.'
         },
         benefits: {
             title: '¿Por qué trabajar con nosotros?'
@@ -144,41 +144,68 @@ const landingConfig = {
             {
                 icon: '🧪',
                 title: 'Desarrollo de producto',
-                description: 'Formulaciones personalizadas y flexibles',
+                description: 'Experiencia desde 1997 en producción de açaí y superfrutas',
                 items: [
-                    'Formulaciones personalizadas según el perfil de cada mercado: clásico, gourmet, funcional, sin azúcar, orgánico',
-                    'Amplia gama de formatos: 100g, 500ml, 1,02L, 3,6L, 5L, 10L',
-                    'Ingredientes diferenciados: açaí premium, guaraná, frutas tropicales, azúcar demerara orgánico, superfrutas'
+                    'Productores de açaí y productos a base de superfrutas desde 1997',
+                    'Amplia variedad de formulaciones: clásico, premium, gourmet, orgánico, con guaraná, sin azúcar, funcionales, mezclas con frutas',
+                    'Portafolio adaptable a cualquier mercado: food service, retail, horeca, exportación',
+                    'Línea completa de formatos: 100g, 200ml, 500ml, 1,02L, 1,5L, 3,6L, 5L, 10L'
                 ]
             },
             {
                 icon: '🎨',
-                title: 'Diseño de packaging',
-                description: 'Equipo especializado en retail y food service',
+                title: 'Diseño y adaptación de packaging',
+                description: 'Experiencia en marcas propias y co-branding',
                 items: [
-                    'Equipo especializado en diseño para retail y food service',
-                    'Experiencia en co-branding con marcas reconocidas como Santa Helena® y Pacogel®',
-                    'Adaptación a estándares internacionales y certificaciones'
+                    'Múltiples ejemplos de marcas desarrolladas para terceros con éxito',
+                    'Capacidad para adaptar envases, etiquetas, idiomas, claims y requisitos regulatorios',
+                    'Packaging disponible en múltiples presentaciones: potes, cajas industriales, stand-up pouches, pulpas, picolés, sorbets',
+                    'Diseño especializado para retail y food service internacional'
                 ]
             },
             {
                 icon: '🏭',
-                title: 'Producción industrial',
-                description: 'Capacidad escalable con certificaciones internacionales',
+                title: 'Producción industrial y capacidad',
+                description: 'Infraestructura escalable para grandes volúmenes',
                 items: [
-                    'Capacidad de producción de 4.200 litros/hora',
-                    'Plantas en São Paulo y Pará con capacidad de almacenamiento de hasta 1.050 toneladas',
-                    'Certificaciones internacionales: USDA Organic, Orgânico Brasil, IFS Global Markets'
+                    'Capacidad productiva de 4.200 litros/hora de producto acabado',
+                    'Dos plantas industriales: Araçariguama/SP y Benevides/PA',
+                    'Capacidad de almacenamiento para 1.050 toneladas en planta Pará',
+                    'Producción para grandes volúmenes: food service, industria, cadenas de supermercados y exportación'
+                ]
+            },
+            {
+                icon: '🏆',
+                title: 'Certificaciones internacionales',
+                description: 'Estándares globales para mercados exigentes',
+                items: [
+                    'USDA Organic - Certificación orgánica para mercado estadounidense',
+                    'Orgânico Brasil - Certificación orgánica nacional',
+                    'IFS Global Markets Food - Estándar internacional de calidad alimentaria',
+                    'Certificaciones que permiten fabricar marcas propias para cadenas internacionales'
                 ]
             },
             {
                 icon: '🌍',
-                title: 'Escalabilidad internacional',
-                description: 'Experiencia en grandes cadenas y distribución global',
+                title: 'Escalabilidad y distribución global',
+                description: 'Experiencia real en grandes cadenas y exportación',
                 items: [
-                    'Presencia en grandes cadenas: Walmart, Carrefour, Pão de Açúcar, Mercadinhos São Luiz, St Marche, entre otros',
-                    'Distribución propia en EE.UU. desde 2018 (Florida)',
-                    'Línea de exportación activa para múltiples mercados'
+                    'Operación de distribución propia en Estados Unidos (Florida) desde 2018',
+                    'Exportación activa con línea específica para mercados internacionales',
+                    'Experiencia suministrando a grandes cadenas: Walmart, Carrefour, Pão de Açúcar, Mercadinhos São Luiz, St Marche, Fort Atacado',
+                    'Logística internacional y cumplimiento normativo en múltiples países'
+                ]
+            },
+            {
+                icon: '🧩',
+                title: 'Flexibilidad para diferentes categorías',
+                description: 'Producción para terceros en múltiples segmentos',
+                items: [
+                    'Açaí premium, orgánico y clásico con guaraná',
+                    'Sorbets funcionales y picolés',
+                    'Pulpa de açaí y mezclas con frutas',
+                    'Formatos industriales (5L, 10L) para food service y fabricación',
+                    'Capacidad de crear marcas propias en cualquier segmento del mercado'
                 ]
             }
         ]
