@@ -60,7 +60,7 @@ const landingConfig = {
         },
         varieties: {
             title: 'Diferentes sabores y superfrutas',
-            subtitle: 'Además del açaí, trabajamos con una gama de superfrutas y sabores complementarios que permiten ampliar la oferta de producto. Esto permite a distribuidores y retailers ofrecer una gama completa dentro de la categoría de superfoods.'
+            subtitle: 'Amplio portafolio de superfrutas, mezclas funcionales y sabores exclusivos para maximizar oportunidades de venta en cada canal'
         },
         privateLabel: {
             title: 'Desarrollo de Marca Propia (Private Label)',
@@ -122,20 +122,52 @@ const landingConfig = {
     // ============ VARIEDADES DE SUPERFRUTAS ============
     varieties: [
         {
-            name: 'Pitaya / Dragon Fruit',
-            description: 'Superfruit vibrante con alto valor visual'
+            name: 'Superfrutas premium',
+            description: 'Línea completa de superfrutas para ampliar el portafolio de producto',
+            items: [
+                'Guaraná - energizante natural presente en casi todas las líneas',
+                'Maracuyá - tropical y refrescante',
+                'Coco - cremoso y versatil',
+                'Fresa - clásico de alta demanda',
+                'Sandía - refrescante ideal para verano',
+                'Piña - tropical con excelente aceptación',
+                'Mix tropical - combinación lista para servir'
+            ]
         },
         {
-            name: 'Mezclas de superfrutas',
-            description: 'Combinaciones optimizadas para máxima demanda'
+            name: 'Mezclas funcionales',
+            description: 'Combinaciones Antiox y Detox con ingredientes premium',
+            items: [
+                'Uva - antioxidante natural',
+                'Beterraba - detox y energizante',
+                'Jengibre - propiedades funcionales',
+                'Kale - superfood verde',
+                'Pepino - refrescante y detox',
+                'Manzana - base versátil',
+                'Biomasa - fibra funcional',
+                'Fresa - antioxidante y sabor'
+            ]
         },
         {
-            name: 'Combinaciones para smoothies',
-            description: 'Pre-formuladas para facilitar operativa'
+            name: 'Sabores regionales de Brasil',
+            description: 'Innovación auténtica para diferenciarse en el mercado',
+            items: [
+                'Tapioca con coco y leche condensado - postre brasileño auténtico',
+                'Cupuaçu trufado con chocolate - superfruit amazónico premium',
+                'Sabores exclusivos que aportan diferenciación',
+                'Experiencia brasileña real para el consumidor final'
+            ]
         },
         {
-            name: 'Bowls completos',
-            description: 'Soluciones llave en mano para horeca'
+            name: 'Soluciones para horeca y food service',
+            description: 'Formatos y mezclas diseñadas para operaciones profesionales',
+            items: [
+                'Formatos grandes: 3,6L, 5L, 10L ideales para alto volumen',
+                'Productos listos para servir que simplifican operativa',
+                'Mezclas para smoothies y bowls pre-formuladas',
+                'Bases optimizadas que reducen tiempo de preparación',
+                'Rentabilidad maximizada por porción servida'
+            ]
         }
     ],
 

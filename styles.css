@@ -1239,6 +1239,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
     border-top: 4px solid var(--primary-color);
+    display: flex;
+    flex-direction: column;
 }
 
 .variety-card:hover {
@@ -1273,6 +1275,37 @@ a.btn-primary:not(.form-card .btn-primary) {
     line-height: 1.6;
     font-size: 0.95rem;
     text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.variety-items {
+    list-style: none;
+    margin-top: auto;
+    padding: 0;
+    text-align: left;
+}
+
+.variety-items li {
+    padding: 0.75rem 0;
+    color: #4A5568;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid rgba(123, 44, 191, 0.08);
+}
+
+.variety-items li:last-child {
+    border-bottom: none;
+}
+
+.variety-items li::before {
+    content: '→';
+    color: #10B981;
+    position: absolute;
+    left: 0.25rem;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* ===================================

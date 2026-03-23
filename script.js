@@ -188,10 +188,17 @@ function loadVarieties(varieties) {
         const card = document.createElement('div');
         card.className = 'variety-card fade-in';
         
+        const itemsList = variety.items && variety.items.length > 0 
+            ? `<ul class="variety-items">
+                ${variety.items.map(item => `<li>${item}</li>`).join('')}
+               </ul>`
+            : '';
+        
         card.innerHTML = `
             <div class="variety-icon">✓</div>
             <h3 class="variety-name">${variety.name}</h3>
             <p class="variety-description">${variety.description}</p>
+            ${itemsList}
         `;
         
         grid.appendChild(card);
