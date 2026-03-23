@@ -86,7 +86,7 @@ const landingConfig = {
         {
             title: 'Açaí listo para retail',
             description: 'Productos diseñados para supermercados y tiendas especializadas. Formatos optimizados para maximizar la rotación en punto de venta combinando rentabilidad, precio competitivo y posicionamiento saludable.',
-            image: 'images/açaí bowl.png',
+            image: 'images/producto retail.png',
             items: [
                 'Formatos individuales listos para venta',
                 'Ya funcionan en mercados internacionales',
@@ -95,9 +95,9 @@ const landingConfig = {
             ]
         },
         {
-            title: 'Gama premium de superfrutas',
+            title: 'Gama gourmet',
             description: 'Formatos desarrollados para un posicionamiento más gourmet y saludable. Incluyen opciones con mayor valor nutricional y combinaciones con otras superfrutas.',
-            image: 'images/açaí bowl strawberries.png',
+            image: 'images/gama gourmet.png',
             items: [
                 'Mayor valor nutricional',
                 'Combinaciones con otras superfrutas',
@@ -106,20 +106,9 @@ const landingConfig = {
             ]
         },
         {
-            title: 'Smoothie Packs Premium',
-            description: 'Combinaciones premium de açaí con superfoods diseñadas para maximizar el valor añadido en tu canal de distribución.',
-            image: 'images/açaiDragonFruta9.jpeg',
-            items: [
-                'Açaí + Dragon Fruit + Mango',
-                'Açaí + Berries + Banana',
-                'Pre-porcionado para smoothies',
-                'Alto valor percibido - posicionamiento premium'
-            ]
-        },
-        {
             title: 'Formatos profesionales para horeca',
             description: 'Envases de mayor tamaño diseñados para restauración, cafeterías, hoteles y food service. Pensados para optimizar costes y operativa en horeca.',
-            image: 'images/picolé de açaí.png',
+            image: 'images/horecaimagen.png',
             items: [
                 'Perfectos para bowls de açaí',
                 'Ideales para smoothies y batidos',
