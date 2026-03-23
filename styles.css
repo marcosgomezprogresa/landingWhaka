@@ -1013,6 +1013,9 @@ a.btn-primary:not(.form-card .btn-primary) {
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .benefit-card::before {
@@ -1317,6 +1320,9 @@ a.btn-primary:not(.form-card .btn-primary) {
     border: 2px solid rgba(123, 44, 191, 0.1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .private-label-card::before {
