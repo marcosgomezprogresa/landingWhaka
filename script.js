@@ -449,24 +449,27 @@ async function handleFormSubmit(form) {
     
     // Recopilar datos del formulario
     const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+    const data = {
+        name: formData.get('name'),
+        email: formData.get('email')
+    };
     
     try {
-        // Aquí puedes integrar con tu backend o servicio de email
-        // Ejemplo con un servicio genérico:
+        // ⚠️ IMPORTANTE: Reemplaza esta URL por la de tu Google Apps Script
+        // Después de desplegar el script en Google Sheets, pega aquí la URL que te da
+        const googleScriptURL = 'YOUR_GOOGLE_SCRIPT_URL';
         
-        // await fetch('/api/submit-lead', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(data)
-        // });
+        // Enviar datos a Google Sheets
+        const response = await fetch(googleScriptURL, {
+            method: 'POST',
+            mode: 'no-cors', // Necesario para Google Apps Script
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
         
-        // Simulación de envío (eliminar en producción)
-        await new Promise(resolve => setTimeout(resolve, 2000));
-        
-        console.log('Datos del formulario:', data);
+        console.log('✅ Datos enviados a Google Sheets:', data);
         
         // Mostrar mensaje de éxito
         formCard.style.display = 'none';
@@ -485,7 +488,7 @@ async function handleFormSubmit(form) {
         successCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
     } catch (error) {
-        console.error('Error al enviar el formulario:', error);
+        console.error('❌ Error al enviar el formulario:', error);
         alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
         submitBtn.classList.remove('loading');
         submitBtn.disabled = false;
