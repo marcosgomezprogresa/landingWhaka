@@ -455,9 +455,8 @@ async function handleFormSubmit(form) {
     };
     
     try {
-        // ⚠️ IMPORTANTE: Reemplaza esta URL por la de tu Google Apps Script
-        // Después de desplegar el script en Google Sheets, pega aquí la URL que te da
-        const googleScriptURL = 'YOUR_GOOGLE_SCRIPT_URL';
+        // URL del Google Apps Script - Web App desplegada
+        const googleScriptURL = 'https://script.google.com/macros/s/AKfycbwQ1louL3ycpSG9RnlHNo0USfW32To48YW9bWYcnB-KvCr7hJ_FMVGBiUj_OPMfRrcq/exec';
         
         // Enviar datos a Google Sheets
         const response = await fetch(googleScriptURL, {
