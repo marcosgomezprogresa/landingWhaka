@@ -21,6 +21,7 @@ function initializeLanding() {
     setupSmoothScroll();
     setupScrollAnimations();
     setupHeaderScroll();
+    setupGA4Tracking();
     setCurrentYear();
 }
 
@@ -474,12 +475,19 @@ async function handleFormSubmit(form) {
         formCard.style.display = 'none';
         successCard.style.display = 'block';
         
-        // Enviar evento de conversión (Google Analytics, Facebook Pixel, etc.)
+        // Enviar evento de conversión a Google Analytics 4
         if (typeof gtag !== 'undefined') {
-            gtag('event', 'conversion', {
-                'send_to': 'YOUR_CONVERSION_ID',
-                'value': 1.0,
-                'currency': 'EUR'
+            gtag('event', 'generate_lead', {
+                'event_category': 'Formulario',
+                'event_label': 'Solicitud de catálogo',
+                'value': 1
+            });
+            
+            // Evento personalizado adicional
+            gtag('event', 'form_submit_success', {
+                'form_name': 'Solicitud Catálogo',
+                'user_name': data.name,
+                'user_email': data.email
             });
         }
         
@@ -516,6 +524,73 @@ function setupSmoothScroll() {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+}
+
+// ========================================
+// GOOGLE ANALYTICS 4 - TRACKING DE EVENTOS
+// ========================================
+function setupGA4Tracking() {
+    // Solo ejecutar si gtag está disponible
+    if (typeof gtag === 'undefined') return;
+    
+    // Track clicks en botones de teléfono
+    document.querySelectorAll('a[href^="tel:"]').forEach(phoneLink => {
+        phoneLink.addEventListener('click', () => {
+            gtag('event', 'phone_click', {
+                'event_category': 'Contacto',
+                'event_label': phoneLink.textContent.trim(),
+                'phone_number': phoneLink.href.replace('tel:', '')
+            });
+        });
+    });
+    
+    // Track clicks en botón de solicitar catálogo (antes de enviar)
+    const catalogButtons = document.querySelectorAll('.btn-primary, button[type="submit"]');
+    catalogButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            gtag('event', 'click_catalog_button', {
+                'event_category': 'CTA',
+                'event_label': button.textContent.trim()
+            });
+        });
+    });
+    
+    // Track scroll profundo (75% de la página)
+    let scrollTracked = false;
+    window.addEventListener('scroll', () => {
+        if (scrollTracked) return;
+        
+        const scrollPercentage = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        
+        if (scrollPercentage >= 75) {
+            scrollTracked = true;
+            gtag('event', 'scroll_depth', {
+                'event_category': 'Engagement',
+                'event_label': '75% de la página',
+                'value': 75
+            });
+        }
+    });
+    
+    // Track tiempo en página (30 segundos)
+    setTimeout(() => {
+        gtag('event', 'time_on_page', {
+            'event_category': 'Engagement',
+            'event_label': '30 segundos',
+            'value': 30
+        });
+    }, 30000);
+    
+    // Track clicks en productos/categorías
+    document.querySelectorAll('.category-card, .product-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const cardTitle = card.querySelector('h3')?.textContent || 'Sin título';
+            gtag('event', 'click_product_category', {
+                'event_category': 'Productos',
+                'event_label': cardTitle
+            });
         });
     });
 }
