@@ -856,7 +856,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     position: relative;
-    height: 480px;
+    height: auto;
+    min-height: 480px;
     border: 2px solid rgba(123, 44, 191, 0.1);
     display: flex;
     flex-direction: column;
@@ -866,8 +867,6 @@ a.btn-primary:not(.form-card .btn-primary) {
     transform: translateY(-12px) scale(1.02);
     box-shadow: 0 20px 40px rgba(123, 44, 191, 0.15);
     border-color: rgba(123, 44, 191, 0.3);
-    height: auto;
-    min-height: 480px;
 }
 
 .category-card::before {
@@ -880,7 +879,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .category-image {
     width: 100%;
-    height: 240px;
+    height: 200px;
     object-fit: cover;
     transition: all 0.5s ease;
     flex-shrink: 0;
@@ -888,28 +887,26 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .category-card:hover .category-image {
     transform: scale(1.05);
-    height: 200px;
 }
 
 .category-content {
     flex: 1;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(123, 44, 191, 0.03) 0%, rgba(16, 185, 129, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
     display: flex;
     flex-direction: column;
     transition: all 0.4s ease;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .category-card:hover .category-content {
     background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
-    overflow: visible;
 }
 
 .category-title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: #240046;
     background: linear-gradient(135deg, #7B2CBF 0%, #10B981 100%);
     -webkit-background-clip: text;
@@ -925,11 +922,11 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 .category-description {
     color: #4A5568;
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    line-height: 1.5;
     margin-bottom: 1rem;
-    max-height: 4.8em;
-    overflow: hidden;
+    max-height: none;
+    overflow: visible;
     transition: all 0.4s ease;
 }
 
@@ -942,18 +939,18 @@ a.btn-primary:not(.form-card .btn-primary) {
 .category-list {
     list-style: none;
     margin-top: auto;
-    max-height: 100px;
-    overflow: hidden;
+    max-height: none;
+    overflow: visible;
     transition: all 0.4s ease;
 }
 
 .category-card:hover .category-list {
-    max-height: 500px;
+    max-height: none;
     overflow: visible;
 }
 
 .category-list li {
-    padding: 0.4rem 0;
+    padding: 0.5rem 0;
     color: #4A5568;
     font-size: 0.85rem;
     position: relative;
