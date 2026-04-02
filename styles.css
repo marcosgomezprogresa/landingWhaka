@@ -711,6 +711,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 .form-arrow {
     text-align: right;
     margin-bottom: 1.5rem;
+    padding-right: 2rem;
     animation: bounce 2s ease-in-out infinite;
 }
 
