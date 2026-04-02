@@ -709,7 +709,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 /* Flecha apuntando al formulario */
 .form-arrow {
-    text-align: center;
+    text-align: right;
     margin-bottom: 1.5rem;
     animation: bounce 2s ease-in-out infinite;
 }
