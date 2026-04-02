@@ -85,7 +85,7 @@ const landingConfig = {
     // ============ CATEGORÍAS / PRODUCTOS ============
     categories: [
         {
-            title: 'Açaí listo para retail',
+            title: 'Formatos listos para retail',
             description: 'Productos diseñados para supermercados y tiendas especializadas. Formatos optimizados para maximizar la rotación en punto de venta combinando rentabilidad, precio competitivo y posicionamiento saludable.',
             image: 'images/productossabores.png',
             items: [
