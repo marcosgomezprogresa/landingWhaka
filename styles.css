@@ -715,10 +715,9 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .form-arrow svg {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     filter: drop-shadow(0 4px 8px rgba(16, 185, 129, 0.4));
-    transform: rotate(180deg);
 }
 
 @keyframes bounce {
