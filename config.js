@@ -115,30 +115,6 @@ const landingConfig = {
             ]
         }
     ],
-    
-    // ============ VARIEDADES DE SUPERFRUTAS ============
-    varieties: [
-        {
-            icon: '🍇',
-            name: 'Superfrutas tropicales',
-            keywords: ['Guaraná', 'Maracuyá', 'Coco', 'Piña', 'Fresa', 'Sandía']
-        },
-        {
-            icon: '⚡',
-            name: 'Mezclas funcionales',
-            keywords: ['Antiox', 'Detox', 'Superfoods', 'Biomasa', 'Jengibre']
-        },
-        {
-            icon: '🇧🇷',
-            name: 'Sabores regionales',
-            keywords: ['Tapioca', 'Cupuaçu', 'Auténtico Brasil']
-        },
-        {
-            icon: '🍹',
-            name: 'Soluciones horeca',
-            keywords: ['3,6L', '5L', '10L', 'Listo para servir']
-        }
-    ],
 
     // ============ PRIVATE LABEL ============
     privateLabel: {

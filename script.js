@@ -67,13 +67,6 @@ function loadConfiguration() {
         updateElement('categoriesSubtitle', config.sections.categories.subtitle);
     }
     
-    // Cargar variedades
-    if (config.varieties && config.varieties.length > 0) {
-        loadVarieties(config.varieties);
-        updateElement('varietiesTitle', config.sections.varieties.title);
-        updateElement('varietiesSubtitle', config.sections.varieties.subtitle);
-    }
-    
     // Cargar Private Label
     if (config.privateLabel && config.privateLabel.services) {
         loadPrivateLabel(config.privateLabel.services);
@@ -179,6 +172,8 @@ function loadCategories(categories) {
     });
 }
 
+// Función loadVarieties comentada - sección eliminada
+/*
 function loadVarieties(varieties) {
     const grid = document.getElementById('varietiesGrid');
     if (!grid) return;
@@ -202,6 +197,7 @@ function loadVarieties(varieties) {
         grid.appendChild(card);
     });
 }
+*/
 
 function loadPrivateLabel(services) {
     const grid = document.getElementById('privateLabelGrid');
