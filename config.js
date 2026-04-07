@@ -40,8 +40,7 @@ const landingConfig = {
         checks: [
             'Producto listo para retail y horeca',
             'Fabricación y suministro internacional',
-            'Opciones de Private Label',
-            'Diferentes sabores y superfrutas'
+            'Opciones de Private Label'
         ]
     },
     
@@ -59,8 +58,6 @@ const landingConfig = {
             subtitle: 'Productos listos para retail, gourmet y horeca con márgenes competitivos'
         },
         varieties: {
-            title: 'Diferentes sabores y superfrutas',
-            subtitle: 'Amplio portafolio de superfrutas, mezclas funcionales y sabores exclusivos para maximizar oportunidades de venta en cada canal'
         },
         privateLabel: {
             title: 'Desarrollo de Marca Propia (Private Label)',
