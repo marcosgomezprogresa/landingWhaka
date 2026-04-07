@@ -76,10 +76,10 @@ function loadConfiguration() {
     }
     
     // Cargar beneficios
+    updateElement('benefitsTitle', config.sections.benefits.title);
+    updateElement('benefitsSubtitle', config.sections.benefits.subtitle);
     if (config.benefits && config.benefits.length > 0) {
         loadBenefits(config.benefits);
-        updateElement('benefitsTitle', config.sections.benefits.title);
-        updateElement('benefitsSubtitle', config.sections.benefits.subtitle);
     }
     
     // Cargar testimonios

@@ -65,7 +65,7 @@ const landingConfig = {
             description: 'Contamos con infraestructura, certificaciones y experiencia real en producción para terceros. Acompañamos a nuestros partners en todo el proceso, desde la formulación hasta la entrega final.'
         },
         benefits: {
-            title: '¿Por qué trabajar con nosotros?',
+            title: 'Certificados',
             subtitle: 'Whaka es una industria con más de dos décadas de experiencia en açaí y superfrutas, con infraestructura, certificaciones y capacidad real para abastecer a distribuidores, cadenas de retail, horeca y marcas propias en diferentes mercados.'
         },
         testimonials: {
@@ -190,86 +190,7 @@ const landingConfig = {
     },
 
     // ============ BENEFICIOS ============
-    benefits: [
-        {
-            title: 'Experiencia y solidez industrial',
-            description: 'Más de 21 años de know-how en açaí y superfrutas',
-            emoji: '🏭',
-            icon: '',
-            items: [
-                'Productores de açaí y productos a base de superfrutas desde 1997',
-                'Operación industrial desde 2014 con crecimiento continuo',
-                'Dos plantas estratégicas en Brasil: Araçariguama/SP y Benevides/PA',
-                'Planta en Pará con capacidad de almacenamiento de 1.050 toneladas',
-                'Capacidad productiva de 4.200 litros/hora de producto terminado'
-            ]
-        },
-        {
-            title: 'Certificaciones internacionales',
-            description: 'Calidad, seguridad alimentaria y estándares globales',
-            emoji: '🌍',
-            icon: '',
-            items: [
-                'USDA Organic - Certificación orgánica para mercado estadounidense',
-                'Orgânico Brasil - Certificación orgánica nacional',
-                'IFS Global Markets Food - Estándar internacional de calidad alimentaria',
-                'Certificaciones que garantizan cumplimiento de estándares globales',
-                'Aptas para exportación a mercados exigentes'
-            ]
-        },
-        {
-            title: 'Alcance internacional',
-            description: 'Presencia global con distribución propia',
-            emoji: '🚚',
-            icon: '',
-            items: [
-                'Distribución propia en Estados Unidos (Florida) desde 2018',
-                'Operación para food service y retail estadounidense',
-                'Exportación activa con línea específica para mercados internacionales',
-                'Experiencia facilitando el flujo de productos a otros países',
-                'Logística internacional y cumplimiento normativo'
-            ]
-        },
-        {
-            title: 'Confianza de grandes cadenas',
-            description: 'Capacidad real de suministro y cumplimiento',
-            emoji: '🛒',
-            icon: '',
-            items: [
-                'Ya abastecemos a Walmart, Carrefour, Pão de Açúcar',
-                'Presentes en Mercadinhos São Luiz, St Marche, Fort Atacado',
-                'También en Angeloni, Bistek y otras cadenas de prestigio',
-                'Demostramos capacidad para grandes volúmenes',
-                'Cumplimiento garantizado con estándares de retail internacional'
-            ]
-        },
-        {
-            title: 'Portafolio amplio y adaptable',
-            description: 'Flexibilidad para diferentes mercados y canales',
-            emoji: '📦',
-            icon: '',
-            items: [
-                'Formatos desde 100g hasta 10L para todo tipo de canal',
-                'Líneas premium, orgánicas, clásicas, funcionales',
-                'Sorbets, pulpas, picolés y más categorías',
-                'Ideal para Private Label, food service y retail',
-                'Capacidad para atender industrias que utilizan pulpa en barras o tambores'
-            ]
-        },
-        {
-            title: 'Experiencia real en Private Label',
-            description: 'Fabricamos para grandes marcas en diferentes mercados',
-            emoji: '🤝',
-            icon: '',
-            items: [
-                'Portafolio completo de marcas propias desarrolladas para terceros',
-                'Experiencia en co-branding con marcas como Santa Helena® y Pacogel®',
-                'Desde la formulación hasta el packaging final',
-                'Capacidad de escalabilidad para grandes volúmenes',
-                'Ejemplos reales de éxito en retail internacional'
-            ]
-        }
-    ],
+    benefits: [],
     
     // ============ TESTIMONIOS ============
     testimonials: [
