@@ -977,7 +977,7 @@ a.btn-primary:not(.form-card .btn-primary) {
    CERTIFICADOS - ESTILO VISUAL
    =================================== */
 .benefits {
-    padding: 80px 0;
+    padding: 80px 0 90px 0;
     background: linear-gradient(135deg, #7B2CBF 0%, #5A189A 50%, #240046 100%);
     position: relative;
     overflow: hidden;
@@ -997,47 +997,46 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .benefits .section-title {
-    margin-bottom: 1rem;
-    color: white;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1.25rem;
+    color: #10B981;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+    font-size: clamp(2.8rem, 5.5vw, 4rem);
     font-weight: 800;
+    letter-spacing: 0.01em;
 }
 
 .benefits .section-subtitle {
-    margin-bottom: 3rem;
-    max-width: 700px;
-    color: rgba(255, 255, 255, 0.95);
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    line-height: 1.7;
+    margin-bottom: 3.5rem;
+    max-width: 750px;
+    color: rgba(255, 255, 255, 0.98);
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    line-height: 1.65;
 }
 
 .certificates-image {
     text-align: center;
     margin: 0 auto;
-    padding: 3.5rem 2rem 3rem 2rem;
-    max-width: 850px;
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
-    border-radius: 24px;
+    padding: 3rem 2.5rem 2.5rem 2.5rem;
+    max-width: 900px;
+    background: white;
+    border-radius: 16px;
     position: relative;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
 }
 
 .certificates-image::before {
     content: '';
     position: absolute;
-    top: -3px;
+    top: 0;
     left: 0;
     right: 0;
-    height: 8px;
+    height: 6px;
     background: linear-gradient(90deg, #10B981 0%, #7B2CBF 50%, #10B981 100%);
-    border-radius: 24px 24px 0 0;
+    border-radius: 16px 16px 0 0;
 }
 
 .certificates-image img {
-    max-width: 550px;
+    max-width: 600px;
     width: 100%;
     height: auto;
     display: inline-block;
@@ -1045,7 +1044,11 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 @media (max-width: 768px) {
     .benefits {
-        padding: 60px 0;
+        padding: 60px 0 70px 0;
+    }
+    
+    .benefits .section-title {
+        font-size: clamp(2.2rem, 6vw, 3rem);
     }
     
     .certificates-image {
