@@ -982,10 +982,14 @@ a.btn-primary:not(.form-card .btn-primary) {
     position: relative;
 }
 
+.benefits .section-subtitle {
+    margin-bottom: 2rem;
+}
+
 .certificates-image {
     text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .certificates-image img {
