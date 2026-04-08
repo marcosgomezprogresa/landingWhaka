@@ -66,7 +66,7 @@ const landingConfig = {
         },
         benefits: {
             title: 'Certificados',
-            subtitle: 'Whaka es una industria con más de dos décadas de experiencia en açaí y superfrutas, con infraestructura, certificaciones y capacidad real para abastecer a distribuidores, cadenas de retail, horeca y marcas propias en diferentes mercados.'
+            subtitle: 'Nuestros productos cuentan con certificaciones internacionales que garantizan su calidad, su origen y el cumplimiento de los estándares más exigentes de seguridad alimentaria.'
         },
         testimonials: {
             title: 'Lo que dicen nuestros partners'
