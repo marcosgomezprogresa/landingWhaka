@@ -977,25 +977,42 @@ a.btn-primary:not(.form-card .btn-primary) {
    BENEFICIOS PREMIUM
    =================================== */
 .benefits {
-    padding: 100px 0;
+    padding: 80px 0;
     background: linear-gradient(180deg, #F8F9FA 0%, #FFFFFF 100%);
     position: relative;
 }
 
+.benefits .section-title {
+    margin-bottom: 1.5rem;
+}
+
 .benefits .section-subtitle {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    max-width: 650px;
 }
 
 .certificates-image {
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0 1rem;
 }
 
 .certificates-image img {
-    max-width: 100%;
+    max-width: 700px;
+    width: 100%;
     height: auto;
     display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        padding: 60px 0;
+    }
+    
+    .certificates-image img {
+        max-width: 100%;
+    }
 }
 
 .benefits-grid {
