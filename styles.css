@@ -982,6 +982,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     position: relative;
 }
 
+.certificates-image {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.certificates-image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
