@@ -984,17 +984,39 @@ a.btn-primary:not(.form-card .btn-primary) {
     background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
     border-radius: 16px;
     border-left: 4px solid #7B2CBF;
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
+}
+
+.private-label-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #240046;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #7B2CBF 0%, #10B981 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.private-label-info p {
     color: #4A5568;
     font-size: 1.05rem;
     line-height: 1.8;
     font-weight: 500;
-    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
+    margin: 0;
 }
 
 @media (max-width: 768px) {
     .private-label-info {
         padding: 2rem 1.5rem;
         margin: 3rem 1rem 0 1rem;
+    }
+    
+    .private-label-title {
+        font-size: 1.3rem;
+    }
+    
+    .private-label-info p {
         font-size: 1rem;
     }
 }
