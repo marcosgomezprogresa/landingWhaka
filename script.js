@@ -67,13 +67,15 @@ function loadConfiguration() {
         updateElement('categoriesSubtitle', config.sections.categories.subtitle);
     }
     
-    // Cargar Private Label
+    // Cargar Private Label - DESHABILITADO (ahora es un párrafo estático en categorías)
+    /*
     if (config.privateLabel && config.privateLabel.services) {
         loadPrivateLabel(config.privateLabel.services);
         updateElement('privateLabelTitle', config.sections.privateLabel.title);
         updateElement('privateLabelSubtitle', config.sections.privateLabel.subtitle);
         updateElement('privateLabelDescription', config.sections.privateLabel.description);
     }
+    */
     
     // Cargar beneficios
     updateElement('benefitsTitle', config.sections.benefits.title);

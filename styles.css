@@ -974,6 +974,32 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 /* ===================================
+   PRIVATE LABEL INFO
+   =================================== */
+.private-label-info {
+    text-align: center;
+    max-width: 900px;
+    margin: 4rem auto 0 auto;
+    padding: 2.5rem 3rem;
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+    border-radius: 16px;
+    border-left: 4px solid #7B2CBF;
+    color: #4A5568;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(123, 44, 191, 0.1);
+}
+
+@media (max-width: 768px) {
+    .private-label-info {
+        padding: 2rem 1.5rem;
+        margin: 3rem 1rem 0 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* ===================================
    CERTIFICADOS - TARJETA CON LOGOS INDIVIDUALES
    =================================== */
 .benefits {
