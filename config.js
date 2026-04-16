@@ -221,8 +221,8 @@ const landingConfig = {
     footer: {
         companyName: 'WAKA AÇAÍ',
         description: 'Premium açaí orgánico de la Amazonía. El superfood que transforma tu negocio.',
-        email: 'comercial@wakaacai.com',
-        phone: '+34 678 513 800',
+        email: 'markentry@whaka.com.br',
+        phone: '+34 603 734 572',
         website: 'www.wakaacai.com'
     },
     
