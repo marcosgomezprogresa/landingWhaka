@@ -231,7 +231,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #240046 0%, #5A189A 40%, #10002B 100%);
-    padding: 200px 0 100px;
+    padding: 280px 0 100px;
     overflow: hidden;
 }
 
@@ -1871,7 +1871,7 @@ a.btn-primary:not(.form-card .btn-primary) {
    CTA FINAL PREMIUM
    =================================== */
 .cta-final {
-    padding: 120px 0;
+    padding: 60px 0;
     background: linear-gradient(135deg, #240046 0%, #5A189A 50%, #10002B 100%);
     color: white;
     text-align: center;
@@ -2341,7 +2341,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 80px 0 40px !important;
+        padding: 120px 0 40px !important;
         min-height: auto !important;
     }
     
@@ -2550,7 +2550,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== CTA FINAL ===== */
     .cta-final {
-        padding: 80px 0 !important;
+        padding: 40px 0 !important;
     }
     
     .cta-content h2 {
@@ -2615,7 +2615,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 70px 0 30px !important;
+        padding: 100px 0 30px !important;
     }
     
     .hero-content {
@@ -2802,7 +2802,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== CTA FINAL ===== */
     .cta-final {
-        padding: 60px 0 !important;
+        padding: 30px 0 !important;
     }
     
     .cta-content h2 {
@@ -2905,7 +2905,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 60px 0 30px !important;
+        padding: 90px 0 30px !important;
     }
     
     .hero-content {
@@ -3022,7 +3022,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== CTA FINAL ===== */
     .cta-final {
-        padding: 50px 0 !important;
+        padding: 25px 0 !important;
     }
     
     .cta-content h2 {
