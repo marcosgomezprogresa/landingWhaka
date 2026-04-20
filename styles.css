@@ -231,7 +231,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #240046 0%, #5A189A 40%, #10002B 100%);
-    padding: 140px 0 100px;
+    padding: 200px 0 100px;
     overflow: hidden;
 }
 
@@ -827,7 +827,7 @@ a.btn-primary:not(.form-card .btn-primary) {
    CATEGORÍAS PREMIUM
    =================================== */
 .categories {
-    padding: 100px 0;
+    padding: 140px 0;
     background: linear-gradient(180deg, #FFFFFF 0%, #F8F9FA 100%);
     position: relative;
 }
