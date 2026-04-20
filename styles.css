@@ -229,7 +229,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background: linear-gradient(135deg, #240046 0%, #5A189A 40%, #10002B 100%);
     padding: 140px 0 100px;
     overflow: hidden;
