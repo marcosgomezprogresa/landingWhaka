@@ -2090,114 +2090,6 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 /* ===================================
-   RESPONSIVE
-   =================================== */
-@media (max-width: 968px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .hero {
-        padding: 100px 0 60px;
-    }
-
-    .hero-form {
-        position: static;
-    }
-
-    .categories-grid,
-    .benefits-grid,
-    .testimonials-grid,
-    .varieties-grid,
-    .private-label-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-legal {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    
-    /* Reducir elementos flotantes en tablet */
-    .float-element {
-        opacity: 0.4;
-        transform: scale(0.8);
-    }
-    
-    /* Header responsive tablet */
-    .header {
-        padding: 1rem 0;
-    }
-    
-    .logo-icon {
-        height: 65px;
-    }
-    
-    .logo-text {
-        height: 120px;
-    }
-}
-
-@media (max-width: 640px) {
-    .hero-stats {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .form-card {
-        padding: 1.5rem;
-    }
-
-    .categories,
-    .benefits,
-    .testimonials,
-    .varieties,
-    .private-label {
-        padding: 60px 0;
-    }
-
-    .cta-final {
-        padding: 60px 0;
-    }
-
-    .whatsapp-float {
-        width: 50px;
-        height: 50px;
-        bottom: 20px;
-        right: 20px;
-    }
-    
-    /* Ocultar elementos flotantes en móvil para mejor legibilidad */
-    .float-element {
-        display: none;
-    }
-    
-    /* Header responsive móvil */
-    .header {
-        padding: 0.75rem 0;
-    }
-    
-    .logo-icon {
-        height: 55px;
-    }
-    
-    .logo-text {
-        height: 100px;
-    }
-
-    .whatsapp-float svg {
-        width: 26px;
-        height: 26px;
-    }
-}
-
-/* ===================================
    ANIMACIONES
    =================================== */
 .fade-in {
@@ -2376,5 +2268,602 @@ a.btn-primary:not(.form-card .btn-primary) {
     .cookie-btn {
         width: 100%;
         min-width: auto;
+    }
+}
+
+/* ===================================
+   RESPONSIVE MÓVILES - OPTIMIZACIÓN COMPLETA
+   =================================== */
+
+/* Tablets y dispositivos medianos (max-width: 968px) */
+@media (max-width: 968px) {
+    /* Hero Section */
+    .hero-title {
+        font-size: clamp(2rem, 6vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    
+    .hero-stats {
+        gap: 1.5rem;
+    }
+    
+    .stat-item {
+        padding: 1.25rem 1.5rem;
+    }
+    
+    .check-item {
+        font-size: 1rem;
+    }
+    
+    /* Formulario Hero */
+    .form-card {
+        padding: 2rem;
+    }
+    
+    .form-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Private Label Section */
+    .private-label-content {
+        gap: 3rem;
+    }
+    
+    .private-label-main-title {
+        font-size: 2rem;
+    }
+    
+    .private-label-description {
+        font-size: 1.05rem;
+    }
+    
+    /* Categorías */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .category-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* Benefits */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    /* Testimonios */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Móviles grandes y tablets pequeñas (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 0.875rem 0;
+    }
+    
+    .logo-icon {
+        height: 50px;
+    }
+    
+    .logo-text {
+        height: 95px;
+    }
+    
+    .header.scrolled .logo-icon {
+        height: 45px;
+    }
+    
+    .header.scrolled .logo-text {
+        height: 85px;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.875rem, 5vw, 2.5rem);
+        margin-bottom: 1.25rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.05rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+        padding: 1.25rem;
+    }
+    
+    .stat-number {
+        font-size: 2.25rem;
+    }
+    
+    .stat-label {
+        font-size: 0.875rem;
+    }
+    
+    .check-item {
+        font-size: 0.95rem;
+        padding: 0.625rem;
+    }
+    
+    .check-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    /* Formulario */
+    .form-card {
+        padding: 1.75rem 1.5rem;
+    }
+    
+    .form-title {
+        font-size: 1.375rem;
+    }
+    
+    .form-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary {
+        padding: 15px 32px;
+        font-size: 1rem;
+    }
+    
+    /* Categorías */
+    .categories {
+        padding: 70px 0;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 1.25rem;
+    }
+    
+    .category-description {
+        font-size: 0.95rem;
+    }
+    
+    /* Private Label */
+    .private-label-section {
+        padding: 3rem 1.5rem;
+        margin: 3rem 0.5rem 0 0.5rem;
+    }
+    
+    .private-label-content {
+        gap: 2.5rem;
+    }
+    
+    .private-label-feature {
+        padding: 0.875rem;
+    }
+    
+    .feature-icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    /* Benefits */
+    .benefits {
+        padding: 70px 0;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .certificates-container {
+        padding: 2.5rem 1.5rem;
+        gap: 2rem;
+    }
+    
+    .certificate-logo img {
+        max-width: 80px;
+    }
+    
+    /* Testimonios */
+    .testimonials {
+        padding: 70px 0;
+    }
+    
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* CTA Final */
+    .cta-final {
+        padding: 80px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .cta-content p {
+        font-size: 1.05rem;
+    }
+    
+    .btn-large {
+        padding: 16px 34px;
+        font-size: 1.05rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 60px 0 30px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+/* Móviles medianos (max-width: 640px) */
+@media (max-width: 640px) {
+    /* Container más estrecho */
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* Header */
+    .logo-icon {
+        height: 45px;
+    }
+    
+    .logo-text {
+        height: 85px;
+    }
+    
+    /* Hero */
+    .hero {
+        padding: 80px 0 50px;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem;
+        line-height: 1.25;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .hero-checks {
+        gap: 1rem;
+    }
+    
+    .check-item {
+        font-size: 0.9rem;
+        gap: 0.75rem;
+    }
+    
+    /* Formulario */
+    .form-card {
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .form-title {
+        font-size: 1.25rem;
+    }
+    
+    .form-group label {
+        font-size: 0.875rem;
+    }
+    
+    .form-group input {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-primary {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+    
+    .form-phone-cta {
+        margin-top: 1rem;
+    }
+    
+    .phone-link-alt {
+        padding: 12px 20px;
+        font-size: 0.95rem;
+    }
+    
+    /* Secciones */
+    .categories,
+    .benefits,
+    .testimonials {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    /* Cards */
+    .category-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 1.75rem 1.25rem;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.875rem;
+    }
+    
+    .category-title {
+        font-size: 1.15rem;
+    }
+    
+    .category-description {
+        font-size: 0.9rem;
+    }
+    
+    .category-list li {
+        font-size: 0.875rem;
+        padding: 0.5rem 0;
+    }
+    
+    /* Private Label */
+    .private-label-section {
+        padding: 2.5rem 1.25rem;
+    }
+    
+    .private-label-main-title {
+        font-size: 1.5rem;
+    }
+    
+    .private-label-description {
+        font-size: 0.95rem;
+    }
+    
+    .private-label-feature {
+        padding: 0.75rem;
+    }
+    
+    .private-label-feature span {
+        font-size: 0.875rem;
+    }
+    
+    .btn-private-label {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Certificados */
+    .certificates-container {
+        padding: 2rem 1.25rem;
+        gap: 1.5rem;
+    }
+    
+    .certificate-logo img {
+        max-width: 70px;
+    }
+    
+    /* Testimonios */
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-author h4 {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author p {
+        font-size: 0.8rem;
+    }
+    
+    /* CTA Final */
+    .cta-final {
+        padding: 60px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .cta-content p,
+    .cta-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 50px 0 25px;
+    }
+    
+    .footer-col h4 {
+        font-size: 1.125rem;
+    }
+    
+    .footer-col p,
+    .footer-col li {
+        font-size: 0.875rem;
+    }
+    
+    .footer-bottom p,
+    .footer-legal a {
+        font-size: 0.85rem;
+    }
+    
+    /* WhatsApp */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* Móviles pequeños (max-width: 480px) */
+@media (max-width: 480px) {
+    /* Container más ajustado */
+    .container {
+        padding: 0 12px;
+    }
+    
+    /* Header compacto */
+    .header {
+        padding: 0.625rem 0;
+    }
+    
+    .logo-icon {
+        height: 40px;
+    }
+    
+    .logo-text {
+        height: 75px;
+    }
+    
+    /* Hero muy compacto */
+    .hero {
+        padding: 70px 0 40px;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .check-item {
+        font-size: 0.85rem;
+    }
+    
+    /* Formulario compacto */
+    .form-card {
+        padding: 1.25rem 1rem;
+    }
+    
+    .form-title {
+        font-size: 1.125rem;
+    }
+    
+    .form-subtitle {
+        font-size: 0.85rem;
+    }
+    
+    /* Secciones más compactas */
+    .section-title {
+        font-size: 1.625rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    /* Cards más pequeñas */
+    .category-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* Private Label compacto */
+    .private-label-section {
+        padding: 2rem 1rem;
+    }
+    
+    .private-label-main-title {
+        font-size: 1.375rem;
+    }
+    
+    .private-label-feature span {
+        font-size: 0.825rem;
+    }
+    
+    /* CTA */
+    .cta-final {
+        padding: 50px 0;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Reducir espaciado general */
+    .categories,
+    .benefits,
+    .testimonials {
+        padding: 40px 0;
     }
 }
