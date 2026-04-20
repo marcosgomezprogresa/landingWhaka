@@ -951,29 +951,31 @@ a.btn-primary:not(.form-card .btn-primary) {
 }
 
 .category-list li {
-    padding: 0.5rem 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    padding: 0.4rem 0;
     color: #4A5568;
     font-size: 0.85rem;
-    position: relative;
-    padding-left: 1.75rem;
-    transition: all 0.3s ease;
     line-height: 1.5;
+    position: static;
+    padding-left: 0;
+    transition: none;
 }
 
 .category-card:hover .category-list li {
-    padding: 0.5rem 0;
-    padding-left: 1.75rem;
+    padding: 0.4rem 0;
+    padding-left: 0;
 }
 
 .category-list li::before {
     content: '✓';
     color: #7B2CBF;
-    position: absolute;
-    left: 0;
-    top: 0.5rem;
     font-weight: bold;
     font-size: 0.9rem;
     line-height: 1.5;
+    flex-shrink: 0;
+    position: static;
 }
 
 /* ===================================
