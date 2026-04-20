@@ -2744,38 +2744,49 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== FORMULARIO ===== */
     .form-card {
-        padding: 1.5rem 1.25rem !important;
+        padding: 1.25rem 1.25rem !important;
     }
     
     .lead-form {
-        gap: 0.75rem !important;
+        gap: 0.6rem !important;
     }
     
     .form-phone-cta {
-        margin-top: 0.75rem !important;
-        padding-top: 0.75rem !important;
+        margin-top: 0.6rem !important;
+        padding-top: 0.6rem !important;
     }
     
     .form-title {
-        font-size: 1.25rem !important;
+        font-size: 1.15rem !important;
+        margin-bottom: 0.25rem !important;
     }
     
     .form-subtitle {
-        font-size: 0.875rem !important;
+        font-size: 0.8rem !important;
+        margin-bottom: 0.6rem !important;
     }
     
     .form-group label {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
     }
     
     .form-group input {
-        padding: 12px 14px;
-        font-size: 0.95rem;
+        padding: 9px 12px !important;
+        font-size: 0.9rem;
+    }
+    
+    .checkbox-label {
+        font-size: 0.85rem !important;
     }
     
     .btn-primary {
-        padding: 14px 28px;
-        font-size: 0.95rem;
+        padding: 11px 28px !important;
+        font-size: 0.9rem;
+    }
+    
+    .form-note {
+        font-size: 0.7rem !important;
+        margin-top: -0.25rem !important;
     }
     
     .phone-link-alt {
