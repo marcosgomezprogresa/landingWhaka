@@ -2357,6 +2357,16 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-title {
         font-size: clamp(1.875rem, 5vw, 2.5rem) !important;
         margin-bottom: 1rem;
+        color: white !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .hero-title .highlight {
+        background: linear-gradient(120deg, #C77DFF 0%, #10B981 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
     }
     
     .hero-subtitle {
@@ -2364,6 +2374,10 @@ a.btn-primary:not(.form-card .btn-primary) {
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
+        color: white !important;
+        opacity: 0.92 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     .hero-stats {
@@ -2411,11 +2425,27 @@ a.btn-primary:not(.form-card .btn-primary) {
         width: 100% !important;
         justify-content: center !important;
         display: flex !important;
+        visibility: visible !important;
+        color: white !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+        border: 2px solid rgba(255, 255, 255, 0.5) !important;
+        padding: 14px 24px !important;
     }
     
     .form-phone-cta {
         display: block !important;
-        margin-top: 1.5rem;
+        margin-top: 1.5rem !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+        padding-top: 1.5rem !important;
+    }
+    
+    .form-phone-cta p {
+        color: white !important;
+        opacity: 0.9 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     /* ===== CATEGORIES ===== */
@@ -2595,10 +2625,24 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-title {
         font-size: 1.75rem !important;
         line-height: 1.25;
+        color: white !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .hero-title .highlight {
+        background: linear-gradient(120deg, #C77DFF 0%, #10B981 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
     }
     
     .hero-subtitle {
         font-size: 1rem !important;
+        color: white !important;
+        opacity: 0.92 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     .hero-checks {
@@ -2639,6 +2683,26 @@ a.btn-primary:not(.form-card .btn-primary) {
     .phone-link-alt {
         font-size: 1rem;
         padding: 12px 20px;
+        display: flex !important;
+        visibility: visible !important;
+        color: white !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+        border: 2px solid rgba(255, 255, 255, 0.5) !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    .form-phone-cta {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .form-phone-cta p {
+        color: white !important;
+        opacity: 0.9 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     /* ===== SECCIONES ===== */
@@ -2851,10 +2915,24 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-title {
         font-size: 1.5rem !important;
         line-height: 1.2;
+        color: white !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+    
+    .hero-title .highlight {
+        background: linear-gradient(120deg, #C77DFF 0%, #10B981 100%) !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text !important;
     }
     
     .hero-subtitle {
         font-size: 0.95rem !important;
+        color: white !important;
+        opacity: 0.92 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     .stat-item {
@@ -2885,6 +2963,26 @@ a.btn-primary:not(.form-card .btn-primary) {
     .phone-link-alt {
         font-size: 0.95rem;
         padding: 10px 20px;
+        display: flex !important;
+        visibility: visible !important;
+        color: white !important;
+        background: rgba(255, 255, 255, 0.15) !important;
+        border: 2px solid rgba(255, 255, 255, 0.5) !important;
+        width: 100% !important;
+        justify-content: center !important;
+    }
+    
+    .form-phone-cta {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    
+    .form-phone-cta p {
+        color: white !important;
+        opacity: 0.9 !important;
+        display: block !important;
+        visibility: visible !important;
     }
     
     /* ===== SECCIONES ===== */
@@ -2964,74 +3062,5 @@ a.btn-primary:not(.form-card .btn-primary) {
     .cookie-btn {
         width: 100%;
         min-width: auto;
-    }
-}
-
-/* ===================================
-   RESPONSIVE ESPECÍFICO PARA HERO
-   =================================== */
-
-@media (max-width: 768px) {
-    /* Hero: cambiar a 1 columna en móvil */
-    .hero-content {
-        grid-template-columns: 1fr !important;
-        gap: 2rem;
-    }
-    
-    .hero {
-        padding: 80px 0 40px;
-    }
-    
-    /* Centrar texto en móvil */
-    .hero-text {
-        text-align: center;
-    }
-    
-    /* Stats en columna */
-    .hero-stats {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .stat-item {
-        width: 100%;
-    }
-    
-    /* Checks centrados */
-    .hero-checks {
-        justify-content: center;
-    }
-    
-    /* Formulario */
-    .form-title,
-    .form-subtitle {
-        text-align: center;
-    }
-    
-    .btn-primary {
-        width: 100%;
-    }
-    
-    .phone-link-alt {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        padding: 60px 0 30px;
-    }
-    
-    .hero-title {
-        font-size: 1.5rem !important;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.95rem !important;
-    }
-    
-    .form-card {
-        padding: 1.25rem 1rem;
     }
 }
