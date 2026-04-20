@@ -2753,15 +2753,17 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== FORMULARIO ===== */
     .form-card {
         padding: 1.25rem 1.25rem !important;
-        max-height: 75vh !important;
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
+        overflow: visible !important;
     }
     
     .lead-form {
         gap: 0.6rem !important;
+        max-height: 65vh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
+        padding-right: 4px !important;
     }
     
     .form-phone-cta {
@@ -3130,15 +3132,17 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== FORMULARIO ===== */
     .form-card {
         padding: 1.25rem 1rem !important;
-        max-height: 72vh !important;
-        overflow-y: auto !important;
-        overflow-x: hidden !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
+        overflow: visible !important;
     }
     
     .lead-form {
         gap: 0.6rem !important;
+        max-height: 62vh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
+        padding-right: 4px !important;
     }
     
     .form-phone-cta {
