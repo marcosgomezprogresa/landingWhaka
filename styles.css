@@ -2277,7 +2277,17 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 /* Tablets y dispositivos medianos (max-width: 968px) */
 @media (max-width: 968px) {
-    /* Hero Section */
+    /* Hero - TODO EN UNA COLUMNA */
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
     .hero-title {
         font-size: clamp(2rem, 6vw, 3rem);
     }
@@ -2285,21 +2295,33 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-subtitle {
         font-size: 1.1rem;
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .hero-stats {
         gap: 1.5rem;
+        justify-content: center;
     }
     
     .stat-item {
         padding: 1.25rem 1.5rem;
     }
     
+    .hero-checks {
+        justify-content: center;
+    }
+    
     .check-item {
         font-size: 1rem;
     }
     
-    /* Formulario Hero */
+    /* Formulario Hero - Centrado */
+    .hero-form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
     .form-card {
         padding: 2rem;
     }
@@ -2345,6 +2367,11 @@ a.btn-primary:not(.form-card .btn-primary) {
 
 /* Móviles grandes y tablets pequeñas (max-width: 768px) */
 @media (max-width: 768px) {
+    /* Container */
+    .container {
+        padding: 0 20px;
+    }
+    
     /* Header */
     .header {
         padding: 0.875rem 0;
@@ -2366,10 +2393,20 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 85px;
     }
     
-    /* Hero */
+    /* Hero - UNA COLUMNA CENTRADA */
     .hero {
         min-height: auto;
         padding: 100px 0 60px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
     }
     
     .hero-title {
@@ -2380,15 +2417,20 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-subtitle {
         font-size: 1.05rem;
         margin-bottom: 2.5rem;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .hero-stats {
         flex-direction: column;
         gap: 1.25rem;
+        align-items: center;
     }
     
     .stat-item {
         width: 100%;
+        max-width: 400px;
         padding: 1.25rem;
     }
     
@@ -2398,6 +2440,10 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .stat-label {
         font-size: 0.875rem;
+    }
+    
+    .hero-checks {
+        justify-content: center;
     }
     
     .check-item {
@@ -2410,17 +2456,24 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 24px;
     }
     
-    /* Formulario */
+    /* Formulario - Centrado */
+    .hero-form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
     .form-card {
         padding: 1.75rem 1.5rem;
     }
     
     .form-title {
         font-size: 1.375rem;
+        text-align: center;
     }
     
     .form-subtitle {
         font-size: 0.9rem;
+        text-align: center;
     }
     
     .btn-primary {
@@ -2560,9 +2613,19 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 85px;
     }
     
-    /* Hero */
+    /* Hero - UNA COLUMNA CENTRADA */
     .hero {
         padding: 80px 0 50px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
     }
     
     .hero-title {
@@ -2573,10 +2636,19 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-subtitle {
         font-size: 1rem;
         margin-bottom: 2rem;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        align-items: center;
     }
     
     .hero-checks {
         gap: 1rem;
+        justify-content: center;
     }
     
     .check-item {
@@ -2584,13 +2656,23 @@ a.btn-primary:not(.form-card .btn-primary) {
         gap: 0.75rem;
     }
     
-    /* Formulario */
+    /* Formulario - Centrado */
+    .hero-form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
     .form-card {
         padding: 1.5rem 1.25rem;
     }
     
     .form-title {
         font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .form-subtitle {
+        text-align: center;
     }
     
     .form-group label {
@@ -2610,6 +2692,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .form-phone-cta {
         margin-top: 1rem;
+        text-align: center;
     }
     
     .phone-link-alt {
@@ -2784,9 +2867,19 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 75px;
     }
     
-    /* Hero muy compacto */
+    /* Hero muy compacto - UNA COLUMNA CENTRADA */
     .hero {
         padding: 70px 0 40px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-text {
+        text-align: center;
     }
     
     .hero-title {
@@ -2795,6 +2888,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .hero-subtitle {
         font-size: 0.95rem;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hero-checks {
+        justify-content: center;
     }
     
     .stat-item {
@@ -2809,17 +2914,28 @@ a.btn-primary:not(.form-card .btn-primary) {
         font-size: 0.85rem;
     }
     
-    /* Formulario compacto */
+    /* Formulario compacto - Centrado */
+    .hero-form {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
     .form-card {
         padding: 1.25rem 1rem;
     }
     
     .form-title {
         font-size: 1.125rem;
+        text-align: center;
     }
     
     .form-subtitle {
         font-size: 0.85rem;
+        text-align: center;
+    }
+    
+    .form-phone-cta {
+        text-align: center;
     }
     
     /* Secciones más compactas */
