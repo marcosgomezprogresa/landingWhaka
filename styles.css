@@ -955,22 +955,25 @@ a.btn-primary:not(.form-card .btn-primary) {
     color: #4A5568;
     font-size: 0.85rem;
     position: relative;
-    padding-left: 2rem;
+    padding-left: 1.75rem;
     transition: all 0.3s ease;
+    line-height: 1.5;
 }
 
 .category-card:hover .category-list li {
     padding: 0.5rem 0;
-    padding-left: 2rem;
+    padding-left: 1.75rem;
 }
 
 .category-list li::before {
     content: '✓';
     color: #7B2CBF;
     position: absolute;
-    left: 0.25rem;
+    left: 0;
+    top: 0.5rem;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 /* ===================================
