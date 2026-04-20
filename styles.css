@@ -2360,7 +2360,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 100px 0 40px !important;
+        padding: 115px 0 40px !important;
         min-height: auto !important;
     }
     
@@ -2695,6 +2695,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .logo-text {
         height: 85px;
+    }
+    
+    /* Ocultar flecha decorativa en móvil */
+    .form-arrow {
+        display: none !important;
     }
     
     /* ===== HERO ===== */
@@ -3033,6 +3038,10 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 75px;
     }
     
+    /* Ocultar flecha decorativa */
+    .form-arrow {
+        display: none !important;
+    }
     /* ===== HERO ===== */
     .hero {
         padding: 80px 0 30px !important;
