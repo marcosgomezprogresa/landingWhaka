@@ -2836,7 +2836,16 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .category-list li {
         font-size: 0.875rem !important;
-        padding: 0.5rem 0 !important;
+        padding: 0.4rem 0 !important;
+        padding-left: 0 !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 0.6rem !important;
+    }
+    
+    .category-list li::before {
+        position: static !important;
+        flex-shrink: 0 !important;
     }
     
     /* ===== PRIVATE LABEL ===== */
@@ -3151,6 +3160,15 @@ a.btn-primary:not(.form-card .btn-primary) {
     .category-list li {
         font-size: 0.825rem !important;
         padding: 0.4rem 0 !important;
+        padding-left: 0 !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 0.6rem !important;
+    }
+    
+    .category-list li::before {
+        position: static !important;
+        flex-shrink: 0 !important;
     }
     
     /* ===== PRIVATE LABEL ===== */
@@ -3271,5 +3289,14 @@ a.btn-primary:not(.form-card .btn-primary) {
 
     .category-list li {
         transition: none !important;
+        padding-left: 0 !important;
+        display: flex !important;
+        align-items: flex-start !important;
+        gap: 0.6rem !important;
+    }
+    
+    .category-list li::before {
+        position: static !important;
+        flex-shrink: 0 !important;
     }
 }
