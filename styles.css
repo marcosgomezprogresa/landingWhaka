@@ -2697,9 +2697,17 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 85px;
     }
     
-    /* Ocultar flecha decorativa en móvil */
+    /* Mostrar flecha decorativa en móvil */
     .form-arrow {
-        display: none !important;
+        display: block !important;
+        text-align: center !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .form-arrow svg {
+        width: 40px !important;
+        height: 40px !important;
     }
     
     /* ===== HERO ===== */
@@ -2745,6 +2753,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== FORMULARIO ===== */
     .form-card {
         padding: 1.25rem 1.25rem !important;
+        max-height: 75vh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
     }
     
     .lead-form {
@@ -3058,9 +3071,17 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 75px;
     }
     
-    /* Ocultar flecha decorativa */
+    /* Mostrar flecha decorativa */
     .form-arrow {
-        display: none !important;
+        display: block !important;
+        text-align: center !important;
+        margin-right: 0 !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .form-arrow svg {
+        width: 36px !important;
+        height: 36px !important;
     }
     /* ===== HERO ===== */
     .hero {
@@ -3109,6 +3130,11 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== FORMULARIO ===== */
     .form-card {
         padding: 1.25rem 1rem !important;
+        max-height: 72vh !important;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: rgba(199, 125, 255, 0.6) rgba(255,255,255,0.1) !important;
     }
     
     .lead-form {
