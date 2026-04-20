@@ -3205,3 +3205,66 @@ a.btn-primary:not(.form-card .btn-primary) {
         min-width: auto;
     }
 }
+
+/* ===================================
+   DISPOSITIVOS TÁCTILES - SIN HOVER
+   Anula TODOS los efectos hover en
+   pantallas táctiles (móvil/tablet)
+   =================================== */
+@media (hover: none) {
+    .category-card {
+        transition: none !important;
+        transform: none !important;
+        min-height: auto !important;
+        cursor: default !important;
+    }
+
+    .category-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+        border-color: rgba(123, 44, 191, 0.1) !important;
+    }
+
+    .category-card:hover .category-image {
+        transform: none !important;
+    }
+
+    .category-card:hover .category-content {
+        background: linear-gradient(135deg, rgba(123, 44, 191, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%) !important;
+    }
+
+    .category-card:hover .category-title {
+        font-size: 1.4rem !important;
+    }
+
+    .category-image {
+        transition: none !important;
+    }
+
+    .category-content {
+        transition: none !important;
+        overflow: visible !important;
+    }
+
+    .category-title {
+        transition: none !important;
+    }
+
+    .category-description {
+        transition: none !important;
+        max-height: none !important;
+        overflow: visible !important;
+        font-size: 0.85rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .category-list {
+        transition: none !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .category-list li {
+        transition: none !important;
+    }
+}
