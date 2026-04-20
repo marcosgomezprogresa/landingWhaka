@@ -674,8 +674,9 @@ function acceptCookies() {
     localStorage.setItem('cookieConsent', 'accepted');
     hideCookieBanner();
     
-    // Aquí puedes inicializar tus scripts de analytics, etc.
-    console.log('Cookies aceptadas');
+    // Inicializar Google Analytics 4
+    loadGoogleAnalytics();
+    console.log('Cookies aceptadas - Google Analytics activado');
 }
 
 function rejectCookies() {
@@ -699,7 +700,36 @@ function checkCookieConsent() {
     // Si no hay respuesta guardada, mostrar el banner
     if (!consent) {
         showCookieBanner();
+    } else if (consent === 'accepted') {
+        // Si ya aceptó anteriormente, cargar Google Analytics
+        loadGoogleAnalytics();
     }
+}
+
+// Función para cargar Google Analytics dinámicamente
+function loadGoogleAnalytics() {
+    // Evitar cargar GA4 múltiples veces
+    if (window.gaLoaded) return;
+    window.gaLoaded = true;
+    
+    // Cargar el script de Google Analytics
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-77YWR05VTX';
+    document.head.appendChild(script);
+    
+    // Configurar GA4 cuando se cargue el script
+    script.onload = function() {
+        gtag('js', new Date());
+        gtag('config', 'G-77YWR05VTX', {
+            'send_page_view': true,
+            'cookie_flags': 'SameSite=None;Secure'
+        });
+        
+        // Configurar tracking de eventos
+        setupGA4Tracking();
+        console.log('Google Analytics 4 cargado y configurado');
+    };
 }
 
 // Verificar el consentimiento de cookies al cargar la página
