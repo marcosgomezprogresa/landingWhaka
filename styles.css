@@ -2325,6 +2325,15 @@ a.btn-primary:not(.form-card .btn-primary) {
         gap: 2rem;
     }
     
+    /* Categories estáticas en tablets */
+    .category-card {
+        transition: none !important;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-5px) scale(1.01) !important;
+    }
+    
     /* Testimonials */
     .testimonials-grid {
         grid-template-columns: 1fr !important;
@@ -2448,26 +2457,66 @@ a.btn-primary:not(.form-card .btn-primary) {
         visibility: visible !important;
     }
     
-    /* ===== CATEGORIES ===== */
+    /* ===== CATEGORIES - ESTÁTICO EN MÓVIL ===== */
     .categories {
-        padding: 70px 0;
+        padding: 70px 0 !important;
     }
     
     .categories-grid {
         grid-template-columns: 1fr !important;
-        gap: 1.5rem;
+        gap: 1.5rem !important;
     }
     
     .category-card {
-        padding: 2rem 1.5rem;
+        min-height: auto !important;
+        height: auto !important;
+        transform: none !important;
+        transition: none !important;
+        cursor: default !important;
+    }
+    
+    .category-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+    
+    .category-image {
+        height: 180px !important;
+    }
+    
+    .category-card:hover .category-image {
+        transform: none !important;
+    }
+    
+    .category-content {
+        padding: 1.5rem !important;
     }
     
     .category-title {
-        font-size: 1.25rem;
+        font-size: 1.25rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .category-card:hover .category-title {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .category-description {
-        font-size: 0.95rem;
+        font-size: 0.95rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 1rem !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    .category-card:hover .category-description {
+        max-height: none !important;
+    }
+    
+    .category-list {
+        max-height: none !important;
+        overflow: visible !important;
     }
     
     /* ===== PRIVATE LABEL ===== */
@@ -2723,10 +2772,34 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     /* ===== CARDS ===== */
-    .category-card,
     .benefit-card,
     .testimonial-card {
         padding: 1.75rem 1.25rem;
+    }
+    
+    /* Categories estáticas */
+    .category-card {
+        min-height: auto !important;
+        height: auto !important;
+        transform: none !important;
+        cursor: default !important;
+    }
+    
+    .category-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+    
+    .category-card:hover .category-image {
+        transform: none !important;
+    }
+    
+    .category-image {
+        height: 170px !important;
+    }
+    
+    .category-content {
+        padding: 1.5rem !important;
     }
     
     .category-icon {
@@ -2736,16 +2809,29 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .category-title {
-        font-size: 1.15rem;
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .category-card:hover .category-title {
+        font-size: 1.15rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .category-description {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    .category-list {
+        max-height: none !important;
+        overflow: visible !important;
     }
     
     .category-list li {
-        font-size: 0.875rem;
-        padding: 0.5rem 0;
+        font-size: 0.875rem !important;
+        padding: 0.5rem 0 !important;
     }
     
     /* ===== PRIVATE LABEL ===== */
@@ -3000,11 +3086,66 @@ a.btn-primary:not(.form-card .btn-primary) {
         padding: 40px 0 !important;
     }
     
+    .categories-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+    
     /* ===== CARDS ===== */
-    .category-card,
     .benefit-card,
     .testimonial-card {
         padding: 1.5rem 1rem;
+    }
+    
+    /* Categories estáticas */
+    .category-card {
+        min-height: auto !important;
+        height: auto !important;
+        transform: none !important;
+        cursor: default !important;
+    }
+    
+    .category-card:hover {
+        transform: none !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+    }
+    
+    .category-card:hover .category-image {
+        transform: none !important;
+    }
+    
+    .category-image {
+        height: 160px !important;
+    }
+    
+    .category-content {
+        padding: 1.25rem !important;
+    }
+    
+    .category-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .category-card:hover .category-title {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .category-description {
+        font-size: 0.875rem !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    .category-list {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+    
+    .category-list li {
+        font-size: 0.825rem !important;
+        padding: 0.4rem 0 !important;
     }
     
     /* ===== PRIVATE LABEL ===== */
