@@ -2246,6 +2246,702 @@ a.btn-primary:not(.form-card .btn-primary) {
     color: var(--primary-dark);
 }
 
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE FIRST
+   Organizado por breakpoint de mayor a menor
+   =================================== */
+
+/* ============================================
+   TABLETS Y PANTALLAS MEDIANAS (max-width: 1024px)
+   ============================================ */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    /* Benefits Grid */
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    /* Private Label Grid */
+    .private-label-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    /* Varieties Grid */
+    .varieties-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.5rem;
+    }
+}
+
+/* ============================================
+   TABLETS PEQUEÑAS (max-width: 968px)
+   ============================================ */
+@media (max-width: 968px) {
+    /* Hero Section - Cambiar a 1 columna */
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 3rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .hero-checks {
+        justify-content: center;
+    }
+    
+    /* Private Label Content */
+    .private-label-content {
+        grid-template-columns: 1fr !important;
+        gap: 3rem;
+    }
+    
+    .private-label-image {
+        order: -1;
+    }
+    
+    .image-badge {
+        bottom: 10px;
+        right: 10px;
+        padding: 0.6rem 1.2rem;
+    }
+    
+    .badge-text {
+        font-size: 0.85rem;
+    }
+    
+    /* Categories Grid */
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 2rem;
+    }
+    
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ============================================
+   MÓVILES GRANDES Y TABLETS MINI (max-width: 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+        padding: 80px 0 40px !important;
+        min-height: auto !important;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem;
+    }
+    
+    .hero-text {
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.875rem, 5vw, 2.5rem) !important;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.05rem !important;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    
+    .hero-stats {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.25rem;
+    }
+    
+    .stat-item {
+        width: 100% !important;
+        max-width: 400px;
+    }
+    
+    .hero-checks {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+    
+    .check-item {
+        font-size: 0.95rem;
+    }
+    
+    /* ===== FORMULARIO ===== */
+    .form-card {
+        padding: 1.75rem 1.5rem !important;
+    }
+    
+    .form-title {
+        font-size: 1.375rem !important;
+        text-align: center;
+    }
+    
+    .form-subtitle {
+        font-size: 0.9rem !important;
+        text-align: center;
+    }
+    
+    .btn-primary {
+        width: 100% !important;
+        padding: 15px 32px;
+        font-size: 1rem;
+    }
+    
+    .phone-link-alt {
+        width: 100% !important;
+        justify-content: center !important;
+        display: flex !important;
+    }
+    
+    .form-phone-cta {
+        display: block !important;
+        margin-top: 1.5rem;
+    }
+    
+    /* ===== CATEGORIES ===== */
+    .categories {
+        padding: 70px 0;
+    }
+    
+    .categories-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .category-title {
+        font-size: 1.25rem;
+    }
+    
+    .category-description {
+        font-size: 0.95rem;
+    }
+    
+    /* ===== PRIVATE LABEL ===== */
+    .private-label-section {
+        padding: 3rem 1.5rem !important;
+        margin: 3rem 1rem 0 1rem !important;
+    }
+    
+    .private-label-content {
+        gap: 2.5rem;
+    }
+    
+    .private-label-main-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .private-label-description {
+        font-size: 1rem !important;
+    }
+    
+    .private-label-feature {
+        padding: 0.875rem;
+    }
+    
+    .private-label-feature span {
+        font-size: 0.95rem;
+    }
+    
+    .btn-private-label {
+        font-size: 1rem;
+        padding: 0.875rem 1.75rem;
+    }
+    
+    .image-badge {
+        position: static !important;
+        margin-top: 1rem;
+        display: inline-block;
+    }
+    
+    .private-label-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    /* ===== BENEFITS ===== */
+    .benefits {
+        padding: 60px 0 !important;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .certificates-container {
+        padding: 2.5rem 1.5rem !important;
+        margin: 0 1rem 3rem 1rem !important;
+        gap: 2rem !important;
+    }
+    
+    .certificate-logo img {
+        max-width: 150px !important;
+        max-height: 85px !important;
+    }
+    
+    /* ===== TESTIMONIOS ===== */
+    .testimonials {
+        padding: 70px 0;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .testimonial-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+        padding: 80px 0 !important;
+    }
+    
+    .cta-content h2 {
+        font-size: 2rem !important;
+    }
+    
+    .cta-content p {
+        font-size: 1.05rem;
+    }
+    
+    .btn-large {
+        padding: 16px 34px;
+        font-size: 1.05rem;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer {
+        padding: 60px 0 30px !important;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem;
+    }
+    
+    .footer-col {
+        text-align: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column !important;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    
+    .footer-legal {
+        flex-direction: column !important;
+        gap: 0.75rem;
+    }
+}
+
+/* ============================================
+   MÓVILES ESTÁNDAR (max-width: 640px)
+   ============================================ */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    /* ===== HEADER ===== */
+    .header {
+        padding: 0.75rem 0;
+    }
+    
+    .logo-icon {
+        height: 45px;
+    }
+    
+    .logo-text {
+        height: 85px;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+        padding: 70px 0 30px !important;
+    }
+    
+    .hero-content {
+        gap: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 1.75rem !important;
+        line-height: 1.25;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem !important;
+    }
+    
+    .hero-checks {
+        gap: 1rem;
+    }
+    
+    .check-item {
+        font-size: 0.9rem;
+    }
+    
+    /* ===== FORMULARIO ===== */
+    .form-card {
+        padding: 1.5rem 1.25rem !important;
+    }
+    
+    .form-title {
+        font-size: 1.25rem !important;
+    }
+    
+    .form-subtitle {
+        font-size: 0.875rem !important;
+    }
+    
+    .form-group label {
+        font-size: 0.875rem;
+    }
+    
+    .form-group input {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+    }
+    
+    .btn-primary {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+    }
+    
+    .phone-link-alt {
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
+    /* ===== SECCIONES ===== */
+    .categories,
+    .benefits,
+    .testimonials {
+        padding: 50px 0 !important;
+    }
+    
+    .section-title {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    
+    /* ===== CARDS ===== */
+    .category-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 1.75rem 1.25rem;
+    }
+    
+    .category-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.875rem;
+    }
+    
+    .category-title {
+        font-size: 1.15rem;
+    }
+    
+    .category-description {
+        font-size: 0.9rem;
+    }
+    
+    .category-list li {
+        font-size: 0.875rem;
+        padding: 0.5rem 0;
+    }
+    
+    /* ===== PRIVATE LABEL ===== */
+    .private-label-section {
+        padding: 2.5rem 1.25rem !important;
+    }
+    
+    .private-label-main-title {
+        font-size: 1.5rem !important;
+    }
+    
+    .private-label-description {
+        font-size: 0.95rem !important;
+    }
+    
+    .private-label-feature {
+        padding: 0.75rem;
+    }
+    
+    .private-label-feature span {
+        font-size: 0.875rem;
+    }
+    
+    .btn-private-label {
+        padding: 0.875rem 1.75rem;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* ===== CERTIFICADOS ===== */
+    .certificates-container {
+        padding: 2rem 1.25rem !important;
+        gap: 1.5rem !important;
+    }
+    
+    .certificate-logo img {
+        max-width: 110px !important;
+        max-height: 70px !important;
+    }
+    
+    /* ===== TESTIMONIOS ===== */
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-author h4 {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author p {
+        font-size: 0.8rem;
+    }
+    
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+        padding: 60px 0 !important;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.75rem !important;
+    }
+    
+    .cta-content p,
+    .cta-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .btn-large {
+        padding: 14px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+    
+    /* ===== FOOTER ===== */
+    .footer {
+        padding: 50px 0 25px !important;
+    }
+    
+    .footer-col h4 {
+        font-size: 1.125rem;
+    }
+    
+    .footer-col p,
+    .footer-col li {
+        font-size: 0.875rem;
+    }
+    
+    .footer-bottom p,
+    .footer-legal a {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== WHATSAPP ===== */
+    .whatsapp-float {
+        width: 55px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+    
+    /* ===== COOKIE BANNER ===== */
+    .cookie-banner {
+        left: 10px !important;
+        right: 10px !important;
+        bottom: 10px !important;
+        max-width: none !important;
+        padding: 1.25rem !important;
+    }
+    
+    .cookie-content {
+        flex-direction: column !important;
+        gap: 0.75rem;
+    }
+    
+    .cookie-buttons {
+        flex-direction: column !important;
+    }
+    
+    .cookie-btn {
+        width: 100% !important;
+        min-width: auto !important;
+    }
+    
+    /* ===== VARIETIES ===== */
+    .varieties-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem;
+    }
+}
+
+/* ============================================
+   MÓVILES PEQUEÑOS (max-width: 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 12px;
+    }
+    
+    /* ===== HEADER ===== */
+    .header {
+        padding: 0.625rem 0;
+    }
+    
+    .logo-icon {
+        height: 40px;
+    }
+    
+    .logo-text {
+        height: 75px;
+    }
+    
+    /* ===== HERO ===== */
+    .hero {
+        padding: 60px 0 30px !important;
+    }
+    
+    .hero-content {
+        gap: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 1.5rem !important;
+        line-height: 1.2;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.95rem !important;
+    }
+    
+    .stat-item {
+        padding: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .check-item {
+        font-size: 0.85rem;
+    }
+    
+    /* ===== FORMULARIO ===== */
+    .form-card {
+        padding: 1.25rem 1rem !important;
+    }
+    
+    .form-title {
+        font-size: 1.125rem !important;
+    }
+    
+    .form-subtitle {
+        font-size: 0.85rem !important;
+    }
+    
+    .phone-link-alt {
+        font-size: 0.95rem;
+        padding: 10px 20px;
+    }
+    
+    /* ===== SECCIONES ===== */
+    .section-title {
+        font-size: 1.625rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .categories,
+    .benefits,
+    .testimonials {
+        padding: 40px 0 !important;
+    }
+    
+    /* ===== CARDS ===== */
+    .category-card,
+    .benefit-card,
+    .testimonial-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    /* ===== PRIVATE LABEL ===== */
+    .private-label-section {
+        padding: 2rem 1rem !important;
+    }
+    
+    .private-label-main-title {
+        font-size: 1.375rem !important;
+    }
+    
+    .private-label-feature span {
+        font-size: 0.825rem;
+    }
+    
+    /* ===== CTA FINAL ===== */
+    .cta-final {
+        padding: 50px 0 !important;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.5rem !important;
+    }
+    
+    /* ===== CERTIFICADOS ===== */
+    .certificates-container {
+        gap: 1.5rem !important;
+    }
+    
+    .certificate-logo img {
+        max-width: 110px !important;
+        max-height: 65px !important;
+    }
+}
+
 /* Responsive cookies */
 @media (max-width: 640px) {
     .cookie-banner {
