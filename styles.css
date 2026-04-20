@@ -2360,7 +2360,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 115px 0 40px !important;
+        padding: 130px 0 40px !important;
         min-height: auto !important;
     }
     
@@ -2747,6 +2747,15 @@ a.btn-primary:not(.form-card .btn-primary) {
         padding: 1.5rem 1.25rem !important;
     }
     
+    .lead-form {
+        gap: 0.75rem !important;
+    }
+    
+    .form-phone-cta {
+        margin-top: 0.75rem !important;
+        padding-top: 0.75rem !important;
+    }
+    
     .form-title {
         font-size: 1.25rem !important;
     }
@@ -3091,12 +3100,22 @@ a.btn-primary:not(.form-card .btn-primary) {
         padding: 1.25rem 1rem !important;
     }
     
+    .lead-form {
+        gap: 0.6rem !important;
+    }
+    
+    .form-phone-cta {
+        margin-top: 0.6rem !important;
+        padding-top: 0.6rem !important;
+    }
+    
     .form-title {
         font-size: 1.125rem !important;
     }
     
     .form-subtitle {
         font-size: 0.85rem !important;
+        margin-bottom: 0.75rem !important;
     }
     
     .phone-link-alt {
