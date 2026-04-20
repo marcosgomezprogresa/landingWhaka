@@ -2307,17 +2307,21 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero {
-        padding: 100px 0 60px;
+        min-height: auto;
+        padding: 80px 0 40px;
     }
     
     .hero-title {
         font-size: clamp(1.875rem, 5vw, 2.5rem);
+        color: white;
+        margin-bottom: 1rem;
     }
     
     .hero-subtitle {
         font-size: 1.05rem;
         margin-left: auto;
         margin-right: auto;
+        color: white;
     }
     
     .hero-stats {
@@ -2342,12 +2346,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     .form-subtitle {
         text-align: center;
     }
+    
+    .form-phone-cta {
+        display: block;
+        margin-top: 1.5rem;
+    }
 }
 
 /* Móviles medianos (max-width: 640px) */
 @media (max-width: 640px) {
     .hero {
-        padding: 80px 0 50px;
+        min-height: auto;
+        padding: 70px 0 30px;
     }
     
     .hero-content {
@@ -2362,6 +2372,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     .hero-title {
         font-size: 1.75rem;
         line-height: 1.25;
+        color: white;
+        margin-bottom: 1rem;
     }
     
     .hero-subtitle {
@@ -2369,11 +2381,13 @@ a.btn-primary:not(.form-card .btn-primary) {
         margin-left: auto;
         margin-right: auto;
         max-width: 100%;
+        color: white;
     }
     
     .hero-checks {
         justify-content: center;
         gap: 1rem;
+        flex-wrap: wrap;
     }
     
     .check-item {
@@ -2396,12 +2410,25 @@ a.btn-primary:not(.form-card .btn-primary) {
     .btn-primary {
         width: 100%;
     }
+    
+    .form-phone-cta {
+        display: block;
+        margin-top: 1.5rem;
+    }
+    
+    .phone-link-alt {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 1rem;
+    }
 }
 
 /* Móviles pequeños (max-width: 480px) */
 @media (max-width: 480px) {
     .hero {
-        padding: 70px 0 40px;
+        min-height: auto;
+        padding: 60px 0 30px;
     }
     
     .hero-content {
@@ -2415,10 +2442,14 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .hero-title {
         font-size: 1.5rem;
+        color: white;
+        margin-bottom: 0.75rem;
+        line-height: 1.2;
     }
     
     .hero-subtitle {
         font-size: 0.95rem;
+        color: white;
     }
     
     .check-item {
@@ -2437,5 +2468,18 @@ a.btn-primary:not(.form-card .btn-primary) {
     .form-subtitle {
         font-size: 0.85rem;
         text-align: center;
+    }
+    
+    .form-phone-cta {
+        display: block;
+        margin-top: 1.25rem;
+    }
+    
+    .phone-link-alt {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 0.95rem;
+        padding: 10px 20px;
     }
 }
