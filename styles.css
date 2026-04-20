@@ -2353,9 +2353,14 @@ a.btn-primary:not(.form-card .btn-primary) {
         padding: 0 20px;
     }
     
+    /* Ocultar imágenes flotantes en móvil */
+    .float-element {
+        display: none !important;
+    }
+    
     /* ===== HERO ===== */
     .hero {
-        padding: 140px 0 40px !important;
+        padding: 90px 0 40px !important;
         min-height: auto !important;
     }
     
@@ -2669,7 +2674,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 120px 0 30px !important;
+        padding: 80px 0 30px !important;
     }
     
     .hero-content {
@@ -3005,7 +3010,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* ===== HERO ===== */
     .hero {
-        padding: 110px 0 30px !important;
+        padding: 80px 0 30px !important;
     }
     
     .hero-content {
