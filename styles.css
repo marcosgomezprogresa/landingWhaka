@@ -2699,15 +2699,20 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* Mostrar flecha decorativa en móvil */
     .form-arrow {
-        display: block !important;
-        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         margin-right: 0 !important;
-        margin-bottom: 0.75rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .form-arrow svg {
         width: 40px !important;
         height: 40px !important;
+    }
+    
+    .hero-form {
+        margin-top: -1.5rem !important;
     }
     
     /* ===== HERO ===== */
@@ -3075,15 +3080,21 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     /* Mostrar flecha decorativa */
     .form-arrow {
-        display: block !important;
-        text-align: center !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
         margin-right: 0 !important;
-        margin-bottom: 0.75rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .form-arrow svg {
         width: 36px !important;
         height: 36px !important;
+    }
+    
+    .hero-form {
+        margin-top: -1rem !important;
+    }
     }
     /* ===== HERO ===== */
     .hero {
