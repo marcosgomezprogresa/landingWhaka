@@ -2718,6 +2718,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== HERO ===== */
     .hero {
         padding: 115px 0 30px !important;
+        min-height: auto !important;
     }
     
     .hero-content {
@@ -3099,6 +3100,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== HERO ===== */
     .hero {
         padding: 105px 0 30px !important;
+        min-height: auto !important;
     }
     
     .hero-content {
