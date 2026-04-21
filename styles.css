@@ -2455,6 +2455,7 @@ a.btn-primary:not(.form-card .btn-primary) {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        width: 100% !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 0.5rem !important;
@@ -2464,6 +2465,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     .form-arrow svg {
         width: 45px !important;
         height: 45px !important;
+        margin: 0 auto !important;
     }
     
     /* ===== FORMULARIO ===== */
@@ -2724,6 +2726,7 @@ a.btn-primary:not(.form-card .btn-primary) {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        width: 100% !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 0.5rem !important;
@@ -2733,6 +2736,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     .form-arrow svg {
         width: 40px !important;
         height: 40px !important;
+        margin: 0 auto !important;
     }
     
     .hero-form {
@@ -3110,6 +3114,7 @@ a.btn-primary:not(.form-card .btn-primary) {
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
+        width: 100% !important;
         margin-right: 0 !important;
         margin-left: 0 !important;
         margin-bottom: 0.5rem !important;
@@ -3119,6 +3124,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     .form-arrow svg {
         width: 36px !important;
         height: 36px !important;
+        margin: 0 auto !important;
     }
     
     .hero-form {
