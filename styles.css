@@ -1174,16 +1174,26 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .private-label-image {
         order: -1;
+        flex-direction: column;
+        gap: 1rem;
     }
     
     .image-badge {
-        bottom: 10px;
-        right: 10px;
+        position: static;
+        margin-top: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        max-width: calc(100% - 2rem);
         padding: 0.6rem 1.2rem;
+        text-align: center;
     }
     
     .badge-text {
         font-size: 0.85rem;
+        white-space: normal;
+        text-align: center;
     }
 }
 
@@ -1213,7 +1223,17 @@ a.btn-primary:not(.form-card .btn-primary) {
     .image-badge {
         position: static;
         margin-top: 1rem;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .badge-text {
+        white-space: normal;
+        text-align: center;
     }
 }
 
@@ -2622,7 +2642,12 @@ a.btn-primary:not(.form-card .btn-primary) {
     .image-badge {
         position: static !important;
         margin-top: 1rem;
-        display: inline-block;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        max-width: 100%;
+        text-align: center;
     }
     
     .private-label-grid {
