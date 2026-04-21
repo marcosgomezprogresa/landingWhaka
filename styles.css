@@ -2450,6 +2450,22 @@ a.btn-primary:not(.form-card .btn-primary) {
         height: 20px !important;
     }
     
+    /* Mostrar flecha decorativa centrada en móvil */
+    .form-arrow {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        margin-bottom: 0.5rem !important;
+        text-align: center !important;
+    }
+    
+    .form-arrow svg {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
     /* ===== FORMULARIO ===== */
     .form-card {
         padding: 1.75rem 1.5rem !important;
@@ -2709,7 +2725,9 @@ a.btn-primary:not(.form-card .btn-primary) {
         justify-content: center !important;
         align-items: center !important;
         margin-right: 0 !important;
+        margin-left: 0 !important;
         margin-bottom: 0.5rem !important;
+        text-align: center !important;
     }
     
     .form-arrow svg {
@@ -3093,7 +3111,9 @@ a.btn-primary:not(.form-card .btn-primary) {
         justify-content: center !important;
         align-items: center !important;
         margin-right: 0 !important;
+        margin-left: 0 !important;
         margin-bottom: 0.5rem !important;
+        text-align: center !important;
     }
     
     .form-arrow svg {
