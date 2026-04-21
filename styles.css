@@ -2364,6 +2364,12 @@ a.btn-primary:not(.form-card .btn-primary) {
         min-height: auto !important;
     }
     
+    .hero-form {
+        position: relative !important;
+        top: auto !important;
+        margin-top: 0 !important;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr !important;
         gap: 0.5rem;
@@ -2712,6 +2718,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-form {
+        position: relative !important;
+        top: auto !important;
         margin-top: 0 !important;
     }
     
@@ -3094,6 +3102,8 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-form {
+        position: relative !important;
+        top: auto !important;
         margin-top: 0 !important;
     }
     
