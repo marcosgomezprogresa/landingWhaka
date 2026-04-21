@@ -3454,6 +3454,12 @@ a.btn-primary:not(.form-card .btn-primary) {
    Este bloque va al final para tener máxima prioridad
    =================================== */
 @media (max-width: 768px) {
+    .hero-form {
+        width: 100% !important;
+        display: block !important;
+        max-width: 100% !important;
+    }
+    
     .form-arrow {
         display: flex !important;
         justify-content: center !important;
