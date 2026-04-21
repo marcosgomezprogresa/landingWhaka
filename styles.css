@@ -2366,7 +2366,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     
     .hero-content {
         grid-template-columns: 1fr !important;
-        gap: 1.5rem;
+        gap: 0.5rem;
     }
     
     .hero-text {
@@ -2712,7 +2712,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-form {
-        margin-top: -1.5rem !important;
+        margin-top: 0 !important;
     }
     
     /* ===== HERO ===== */
@@ -2721,7 +2721,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-content {
-        gap: 2rem;
+        gap: 0.5rem;
     }
     
     .hero-title {
@@ -3093,7 +3093,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-form {
-        margin-top: -1rem !important;
+        margin-top: 0 !important;
     }
     }
     /* ===== HERO ===== */
@@ -3102,7 +3102,7 @@ a.btn-primary:not(.form-card .btn-primary) {
     }
     
     .hero-content {
-        gap: 1.5rem;
+        gap: 0.5rem;
     }
     
     .hero-title {
