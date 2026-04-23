@@ -328,13 +328,13 @@ const landingTranslations = {
                 }
             ],
             checks: [
-                'Produktbereit für Retail und HoReCa',
+                'Produkt bereit für Retail und HoReCa',
                 'Internationale Herstellung und Lieferung',
                 'Private-Label-Optionen'
             ]
         },
         form: {
-            title: 'Katalog und Vertriebskonditionen anfordern',
+            title: 'Katalog und Vertriebsbedingungen anfordern',
             subtitle: 'Kommerzielle Informationen in weniger als 24 Stunden',
             buttonText: 'Katalog anfordern →'
         },
@@ -388,8 +388,8 @@ const landingTranslations = {
                 items: [
                     'Perfekt für Açaí-Bowls',
                     'Ideal für Smoothies und Shakes',
-                    'Gesunde Desserts und Healthy-Menüs',
-                    'Optimieren Kosten im Foodservice'
+                    'Gesunde Desserts und gesunde Menüs',
+                    'Optimieren die Kosten im Foodservice'
                 ]
             }
         ],
