@@ -218,9 +218,19 @@ function detectBrowserLanguage() {
         .find((language) => SUPPORTED_LANGUAGES.includes(language)) || DEFAULT_LANGUAGE;
 }
 
+function getQueryLanguage() {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('lang');
+}
+
 function setupLanguage() {
+    const queryLanguage = getQueryLanguage();
     const storedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    currentLanguage = storedLanguage ? normalizeLanguage(storedLanguage) : detectBrowserLanguage();
+    currentLanguage = queryLanguage
+        ? normalizeLanguage(queryLanguage)
+        : (storedLanguage ? normalizeLanguage(storedLanguage) : detectBrowserLanguage());
+
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLanguage);
 }
 
 function setupLanguageSwitcher() {
@@ -312,6 +322,25 @@ function applyStaticTranslations(ui = {}) {
     updateText('cookieAccept', ui.cookies?.accept);
     updateText('cookieReject', ui.cookies?.reject);
     updateText('cookiePolicyBannerLink', ui.cookies?.link);
+
+    updateLegalLinks();
+}
+
+function updateLegalLinks() {
+    const legalLinks = [
+        ['formNoteLink', 'politica-privacidad.html'],
+        ['legalNoticeLink', 'aviso-legal.html'],
+        ['privacyPolicyLink', 'politica-privacidad.html'],
+        ['cookiePolicyFooterLink', 'politica-cookies.html'],
+        ['cookiePolicyBannerLink', 'politica-cookies.html']
+    ];
+
+    legalLinks.forEach(([id, path]) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.href = `${path}?lang=${currentLanguage}`;
+        }
+    });
 }
 
 function loadCategories(categories) {
