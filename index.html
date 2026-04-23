@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Import açaí premium - Açaí supplier y distributor internacional. Wholesale açaí para retail y horeca. Açaí private label. Fabricación y suministro de superfrutas para distribuidores.">
-    <meta name="keywords" content="import açaí, açaí supplier, wholesale açaí, açaí distributor, açaí private label, açaí retail, açaí horeca, superfrutas distribuidor">
-    <title>Whaka Açaí - Distribuidor de Açaí Brasileño</title>
+    <meta id="metaDescription" name="description" content="Import açaí premium - Açaí supplier y distributor internacional. Wholesale açaí para retail y horeca. Açaí private label. Fabricación y suministro de superfrutas para distribuidores.">
+    <meta id="metaKeywords" name="keywords" content="import açaí, açaí supplier, wholesale açaí, açaí distributor, açaí private label, açaí retail, açaí horeca, superfrutas distribuidor">
+    <title id="pageTitle">Whaka Açaí - Distribuidor de Açaí Brasileño</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -33,11 +33,20 @@
                     <img src="images/whakanombresinfondo.png" alt="Whaka" class="logo-text" id="logoText">
                 </a>
             </div>
+
+            <div class="language-switcher" aria-label="Selector de idioma">
+                <span class="language-switcher-label" id="languageSwitcherLabel">Idioma</span>
+                <div class="language-switcher-group" role="group" aria-label="Cambiar idioma">
+                    <button type="button" class="language-button active" data-lang="es" aria-pressed="true">ES</button>
+                    <button type="button" class="language-button" data-lang="nl" aria-pressed="false">NL</button>
+                    <button type="button" class="language-button" data-lang="de" aria-pressed="false">DE</button>
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Hero Section - Sección principal con CTA -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-overlay"></div>
         
         <!-- Elementos decorativos flotantes -->
@@ -52,8 +61,8 @@
         
         <div class="container hero-content">
             <div class="hero-text">
-                <h1 class="hero-title" id="heroTitle">
-                    Distribuye Açaí Premium <span class="highlight" id="heroHighlight">en tu Mercado</span>
+                <h1 class="hero-title">
+                    <span id="heroTitleText">Distribuye Açaí Premium</span> <span class="highlight" id="heroHighlight">en tu Mercado</span>
                 </h1>
                 <p class="hero-subtitle" id="heroSubtitle">
                     Fabricamos sorbetes de açaí y superfrutas listos para retail y horeca. Trabajamos con distribuidores, retailers y cadenas que buscan introducir productos con alta demanda y margen en su mercado.
@@ -125,19 +134,19 @@
                     
                     <form id="leadForm" class="lead-form">
                         <div class="form-group">
-                            <label for="name">Nombre completo *</label>
+                            <label for="name" id="labelName">Nombre completo *</label>
                             <input type="text" id="name" name="name" required placeholder="Juan Pérez">
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email *</label>
+                            <label for="email" id="labelEmail">Email *</label>
                             <input type="email" id="email" name="email" required placeholder="markentry@whaka.com.br">
                         </div>
                         
                         <div class="form-group checkbox-group">
                             <label class="checkbox-label">
                                 <input type="checkbox" id="privacy" name="privacy" required>
-                                <span>Acepto la política de privacidad *</span>
+                                <span id="privacyLabel">Acepto la política de privacidad *</span>
                             </label>
                         </div>
                         
@@ -145,11 +154,11 @@
                             Solicitar Catálogo →
                         </button>
                         
-                        <p class="form-note">Al enviar este formulario aceptas nuestra <a href="politica-privacidad.html" style="color: rgba(255, 255, 255, 0.9); text-decoration: underline;">política de privacidad</a></p>
+                        <p class="form-note"><span id="formNotePrefix">Al enviar este formulario aceptas nuestra</span> <a id="formNoteLink" href="politica-privacidad.html" style="color: rgba(255, 255, 255, 0.9); text-decoration: underline;">política de privacidad</a></p>
                         
                         <!-- Botón de llamar movido aquí -->
                         <div class="form-phone-cta">
-                            <p>O llámanos directamente:</p>
+                            <p id="formPhoneText">O llámanos directamente:</p>
                             <a href="tel:+34603734572" class="phone-link-alt">
                                 <svg class="phone-icon" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -164,8 +173,8 @@
                             <circle cx="12" cy="12" r="10" stroke-width="2"/>
                             <path d="M8 12l3 3l5-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <h3>¡Gracias por tu interés!</h3>
-                        <p>Nos pondremos en contacto contigo en menos de 24 horas.</p>
+                        <h3 id="formSuccessTitle">¡Gracias por tu interés!</h3>
+                        <p id="formSuccessText">Nos pondremos en contacto contigo en menos de 24 horas.</p>
                     </div>
                 </div>
             </div>
@@ -180,7 +189,7 @@
     </section>
 
     <!-- Sección de Categorías/Productos -->
-    <section class="categories">
+    <section class="categories" id="categories">
         <div class="container">
             <h2 class="section-title" id="categoriesTitle">Categorías que trabajamos</h2>
             <p class="section-subtitle" id="categoriesSubtitle">
@@ -194,37 +203,37 @@
             <div class="private-label-section">
                 <div class="private-label-content">
                     <div class="private-label-text">
-                        <h3 class="private-label-main-title">Desarrollo de Marca Propia (Private Label)</h3>
-                        <p class="private-label-description">Desarrollamos productos para marcas propias, ofreciendo a redes varejistas y distribuidores la misma calidad, tecnología y capacidad industrial aplicada a las líneas Whaka.</p>
+                        <h3 class="private-label-main-title" id="privateLabelMainTitle">Desarrollo de Marca Propia (Private Label)</h3>
+                        <p class="private-label-description" id="privateLabelDescriptionText">Desarrollamos productos para marcas propias, ofreciendo a redes varejistas y distribuidores la misma calidad, tecnología y capacidad industrial aplicada a las líneas Whaka.</p>
                         
                         <div class="private-label-features">
                             <div class="private-label-feature">
                                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span>Açaí y superfrutas en diversos formatos</span>
+                                <span id="privateLabelFeature1">Açaí y superfrutas en diversos formatos</span>
                             </div>
                             <div class="private-label-feature">
                                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span>Especificaciones adaptadas a cada cliente</span>
+                                <span id="privateLabelFeature2">Especificaciones adaptadas a cada cliente</span>
                             </div>
                             <div class="private-label-feature">
                                 <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
-                                <span>Confiabilidad y alto rendimiento en gran escala</span>
+                                <span id="privateLabelFeature3">Confiabilidad y alto rendimiento en gran escala</span>
                             </div>
                         </div>
                         
-                        <a href="#contact-form" class="btn-private-label">Solicita más información →</a>
+                        <a href="#contact-form" class="btn-private-label" id="privateLabelButton">Solicita más información →</a>
                     </div>
                     
                     <div class="private-label-image">
-                        <img src="images/privateLabel.png" alt="Private Label - Productos Marca Propia">
+                        <img src="images/privateLabel.png" alt="Private Label - Productos Marca Propia" id="privateLabelImage">
                         <div class="image-badge">
-                            <span class="badge-text">+50 marcas confían en nosotros</span>
+                            <span class="badge-text" id="privateLabelBadge">+50 marcas confían en nosotros</span>
                         </div>
                     </div>
                 </div>
@@ -233,7 +242,7 @@
     </section>
 
     <!-- Sección de Beneficios -->
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <div class="container">
             <h2 class="section-title" id="benefitsTitle">¿Qué consigues trabajando con nosotros?</h2>
             <p class="section-subtitle" id="benefitsSubtitle"></p>
@@ -260,7 +269,7 @@
     </section>
 
     <!-- Sección de Testimonios -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title" id="testimonialsTitle">Lo que dicen nuestros partners</h2>
             
@@ -294,31 +303,31 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h4>Navegación</h4>
+                    <h4 id="footerNavTitle">Navegación</h4>
                     <ul id="footerNav">
-                        <li><a href="#hero">Inicio</a></li>
-                        <li><a href="#categories">Categorías</a></li>
-                        <li><a href="#benefits">Beneficios</a></li>
-                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#hero" id="footerNavHome">Inicio</a></li>
+                        <li><a href="#categories" id="footerNavCategories">Categorías</a></li>
+                        <li><a href="#benefits" id="footerNavBenefits">Beneficios</a></li>
+                        <li><a href="#testimonials" id="footerNavTestimonials">Testimonios</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-col">
-                    <h4>Contacto</h4>
+                    <h4 id="footerContactTitle">Contacto</h4>
                     <ul class="footer-contact">
-                        <li>Email: <a href="mailto:info@empresa.com" id="footerEmail">info@empresa.com</a></li>
-                        <li>Tel: <a href="tel:+34000000000" id="footerPhone">+34 000 000 000</a></li>
+                        <li><span id="footerEmailLabel">Email:</span> <a href="mailto:info@empresa.com" id="footerEmail">info@empresa.com</a></li>
+                        <li><span id="footerPhoneLabel">Tel:</span> <a href="tel:+34000000000" id="footerPhone">+34 000 000 000</a></li>
                     </ul>
                 </div>
                 
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear"></span> <span id="footerCopyright">Empresa</span>. Todos los derechos reservados.</p>
+                <p>&copy; <span id="currentYear"></span> <span id="footerCopyright">Empresa</span>. <span id="footerRights">Todos los derechos reservados.</span></p>
                 <div class="footer-legal">
-                    <a href="aviso-legal.html">Aviso Legal</a>
-                    <a href="politica-privacidad.html">Política de Privacidad</a>
-                    <a href="politica-cookies.html">Política de Cookies</a>
+                    <a href="aviso-legal.html" id="legalNoticeLink">Aviso Legal</a>
+                    <a href="politica-privacidad.html" id="privacyPolicyLink">Política de Privacidad</a>
+                    <a href="politica-cookies.html" id="cookiePolicyFooterLink">Política de Cookies</a>
                 </div>
             </div>
         </div>
@@ -336,14 +345,14 @@
         <div class="cookie-content">
             <div class="cookie-icon">🍪</div>
             <div class="cookie-text">
-                <h4>Cookies</h4>
-                <p>Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+                <h4 id="cookieTitle">Cookies</h4>
+                <p id="cookieText">Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.</p>
             </div>
         </div>
         <div class="cookie-buttons">
-            <button onclick="acceptCookies()" class="cookie-btn cookie-accept">Aceptar</button>
-            <button onclick="rejectCookies()" class="cookie-btn cookie-reject">Rechazar</button>
-            <a href="politica-cookies.html" class="cookie-link">Política de Cookies</a>
+            <button onclick="acceptCookies()" class="cookie-btn cookie-accept" id="cookieAccept">Aceptar</button>
+            <button onclick="rejectCookies()" class="cookie-btn cookie-reject" id="cookieReject">Rechazar</button>
+            <a href="politica-cookies.html" class="cookie-link" id="cookiePolicyBannerLink">Política de Cookies</a>
         </div>
     </div>
 

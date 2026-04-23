@@ -2,6 +2,12 @@
 // CONFIGURACIÓN Y VARIABLES GLOBALES
 // ========================================
 
+const SUPPORTED_LANGUAGES = ['es', 'nl', 'de'];
+const DEFAULT_LANGUAGE = 'es';
+const LANGUAGE_STORAGE_KEY = 'preferredLanguage';
+
+let currentLanguage = DEFAULT_LANGUAGE;
+
 // Esperar a que se cargue toda la configuración
 document.addEventListener('DOMContentLoaded', () => {
     // Esperar un momento para que config.js se cargue
@@ -16,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // INICIALIZACIÓN DE LA LANDING
 // ========================================
 function initializeLanding() {
+    setupLanguage();
+    setupLanguageSwitcher();
     loadConfiguration();
     setupFormValidation();
     setupSmoothScroll();
@@ -29,16 +37,21 @@ function initializeLanding() {
 // CARGAR CONFIGURACIÓN
 // ========================================
 function loadConfiguration() {
-    if (typeof landingConfig === 'undefined') {
+    if (typeof landingTranslations === 'undefined') {
         console.warn('landingConfig no está definido. Usando valores por defecto.');
         return;
     }
 
-    const config = landingConfig;
+    const config = getCurrentConfig();
+
+    document.documentElement.lang = currentLanguage;
+
+    applyMetaTranslation(config.meta);
+    applyStaticTranslations(config.ui);
 
     // Actualizar textos del Hero
-    updateElement('heroTitle', config.hero.title);
-    updateElement('heroHighlight', config.hero.highlight);
+    updateText('heroTitleText', config.hero.title);
+    updateText('heroHighlight', config.hero.highlight);
     updateElement('heroSubtitle', config.hero.subtitle);
     
     // Actualizar stats
@@ -99,8 +112,8 @@ function loadConfiguration() {
     // Actualizar footer
     updateElement('footerCompanyName', config.footer.companyName);
     updateElement('footerDescription', config.footer.description);
-    updateElement('footerEmail', config.footer.email);
-    updateElement('footerPhone', config.footer.phone);
+    updateContactLink('footerEmail', config.footer.email, 'mailto:');
+    updateContactLink('footerPhone', config.footer.phone, 'tel:');
     updateElement('footerWebsite', config.footer.website);
     updateElement('footerCopyright', config.footer.companyName);
     
@@ -137,9 +150,168 @@ function loadConfiguration() {
 // ========================================
 function updateElement(id, content) {
     const element = document.getElementById(id);
-    if (element && content) {
+    if (element && typeof content !== 'undefined') {
         element.innerHTML = content;
     }
+}
+
+function updateText(id, content) {
+    const element = document.getElementById(id);
+    if (element && typeof content !== 'undefined') {
+        element.textContent = content;
+    }
+}
+
+function updatePlaceholder(id, content) {
+    const element = document.getElementById(id);
+    if (element && typeof content !== 'undefined') {
+        element.placeholder = content;
+    }
+}
+
+function updateAttribute(id, attribute, value) {
+    const element = document.getElementById(id);
+    if (element && typeof value !== 'undefined') {
+        element.setAttribute(attribute, value);
+    }
+}
+
+function updateContactLink(id, content, protocol) {
+    const element = document.getElementById(id);
+    if (!element || typeof content === 'undefined') {
+        return;
+    }
+
+    element.textContent = content;
+    if (protocol === 'tel:') {
+        element.href = `tel:${content.replace(/\s+/g, '')}`;
+    } else {
+        element.href = `${protocol}${content}`;
+    }
+}
+
+function getCurrentConfig() {
+    return landingTranslations[currentLanguage] || landingTranslations[DEFAULT_LANGUAGE];
+}
+
+function getCurrentUI() {
+    return getCurrentConfig().ui || {};
+}
+
+function normalizeLanguage(language) {
+    if (!language) {
+        return DEFAULT_LANGUAGE;
+    }
+
+    const normalized = language.toLowerCase();
+    const match = SUPPORTED_LANGUAGES.find((item) => normalized.startsWith(item));
+    return match || DEFAULT_LANGUAGE;
+}
+
+function detectBrowserLanguage() {
+    const browserLanguages = navigator.languages && navigator.languages.length > 0
+        ? navigator.languages
+        : [navigator.language || navigator.userLanguage || DEFAULT_LANGUAGE];
+
+    return browserLanguages
+        .map(normalizeLanguage)
+        .find((language) => SUPPORTED_LANGUAGES.includes(language)) || DEFAULT_LANGUAGE;
+}
+
+function setupLanguage() {
+    const storedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    currentLanguage = storedLanguage ? normalizeLanguage(storedLanguage) : detectBrowserLanguage();
+}
+
+function setupLanguageSwitcher() {
+    document.querySelectorAll('.language-button').forEach((button) => {
+        button.addEventListener('click', () => {
+            applyLanguage(button.dataset.lang);
+        });
+    });
+
+    updateLanguageButtons();
+}
+
+function applyLanguage(language, persist = true) {
+    const nextLanguage = normalizeLanguage(language);
+    currentLanguage = nextLanguage;
+
+    if (persist) {
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, nextLanguage);
+    }
+
+    document.documentElement.lang = nextLanguage;
+    updateLanguageButtons();
+    loadConfiguration();
+    setupScrollAnimations();
+}
+
+function updateLanguageButtons() {
+    document.querySelectorAll('.language-button').forEach((button) => {
+        const isActive = button.dataset.lang === currentLanguage;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+}
+
+function applyMetaTranslation(meta = {}) {
+    if (meta.title) {
+        document.title = meta.title;
+    }
+
+    const description = document.getElementById('metaDescription');
+    if (description && meta.description) {
+        description.setAttribute('content', meta.description);
+    }
+
+    const keywords = document.getElementById('metaKeywords');
+    if (keywords && meta.keywords) {
+        keywords.setAttribute('content', meta.keywords);
+    }
+}
+
+function applyStaticTranslations(ui = {}) {
+    updateText('languageSwitcherLabel', ui.languageLabel);
+
+    updateText('labelName', ui.form?.nameLabel);
+    updateText('labelEmail', ui.form?.emailLabel);
+    updateText('privacyLabel', ui.form?.privacyLabel);
+    updateText('formNotePrefix', ui.form?.notePrefix);
+    updateText('formNoteLink', ui.form?.noteLink);
+    updateText('formPhoneText', ui.form?.phoneText);
+    updateText('formSuccessTitle', ui.form?.successTitle);
+    updateText('formSuccessText', ui.form?.successText);
+    updatePlaceholder('name', 'Juan Pérez');
+    updatePlaceholder('email', 'markentry@whaka.com.br');
+
+    updateText('privateLabelMainTitle', ui.privateLabel?.title);
+    updateText('privateLabelDescriptionText', ui.privateLabel?.description);
+    updateText('privateLabelFeature1', ui.privateLabel?.features?.[0]);
+    updateText('privateLabelFeature2', ui.privateLabel?.features?.[1]);
+    updateText('privateLabelFeature3', ui.privateLabel?.features?.[2]);
+    updateText('privateLabelButton', ui.privateLabel?.buttonText);
+    updateText('privateLabelBadge', ui.privateLabel?.badgeText);
+    updateAttribute('privateLabelImage', 'alt', ui.privateLabel?.imageAlt);
+
+    updateText('footerNavTitle', ui.footer?.navTitle);
+    updateText('footerNavHome', ui.footer?.navHome);
+    updateText('footerNavCategories', ui.footer?.navCategories);
+    updateText('footerNavBenefits', ui.footer?.navBenefits);
+    updateText('footerNavTestimonials', ui.footer?.navTestimonials);
+    updateText('footerContactTitle', ui.footer?.contactTitle);
+    updateText('footerEmailLabel', ui.footer?.emailLabel);
+    updateText('footerPhoneLabel', ui.footer?.phoneLabel);
+    updateText('footerRights', ui.footer?.rights);
+    updateText('legalNoticeLink', ui.footer?.legalNotice);
+    updateText('privacyPolicyLink', ui.footer?.privacyPolicy);
+    updateText('cookiePolicyFooterLink', ui.footer?.cookiePolicy);
+
+    updateText('cookieTitle', ui.cookies?.title);
+    updateText('cookieText', ui.cookies?.text);
+    updateText('cookieAccept', ui.cookies?.accept);
+    updateText('cookieReject', ui.cookies?.reject);
+    updateText('cookiePolicyBannerLink', ui.cookies?.link);
 }
 
 function loadCategories(categories) {
@@ -364,6 +536,7 @@ function validateForm(form) {
 
 function validateField(field) {
     const value = field.value.trim();
+    const messages = getCurrentUI().validation || {};
     let isValid = true;
     let errorMessage = '';
     
@@ -373,7 +546,7 @@ function validateField(field) {
     // Validar campo requerido
     if (field.hasAttribute('required') && !value) {
         isValid = false;
-        errorMessage = 'Este campo es obligatorio';
+        errorMessage = messages.required || 'Este campo es obligatorio';
     }
     
     // Validar email
@@ -381,7 +554,7 @@ function validateField(field) {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(value)) {
             isValid = false;
-            errorMessage = 'Email no válido';
+            errorMessage = messages.email || 'Email no válido';
         }
     }
     
@@ -390,14 +563,14 @@ function validateField(field) {
         const phoneRegex = /^[\d\s\+\-\(\)]{9,}$/;
         if (!phoneRegex.test(value)) {
             isValid = false;
-            errorMessage = 'Teléfono no válido';
+            errorMessage = messages.phone || 'Teléfono no válido';
         }
     }
     
     // Validar checkbox de privacidad
     if (field.type === 'checkbox' && field.hasAttribute('required') && !field.checked) {
         isValid = false;
-        errorMessage = 'Debes aceptar la política de privacidad';
+        errorMessage = messages.privacy || 'Debes aceptar la política de privacidad';
     }
     
     // Mostrar error o éxito
@@ -494,7 +667,7 @@ async function handleFormSubmit(form) {
         
     } catch (error) {
         console.error('❌ Error al enviar el formulario:', error);
-        alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
+        alert(getCurrentUI().form?.submitError || 'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
         submitBtn.classList.remove('loading');
         submitBtn.disabled = false;
     }

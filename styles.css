@@ -195,7 +195,7 @@ a.btn-primary:not(.form-card .btn-primary) {
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -217,6 +217,58 @@ a.btn-primary:not(.form-card .btn-primary) {
     width: auto;
     transition: all 0.3s ease;
     filter: drop-shadow(0 3px 10px rgba(92, 64, 51, 0.25));
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.6rem 0.5rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(123, 44, 191, 0.12);
+    box-shadow: 0 10px 24px rgba(36, 0, 70, 0.08);
+    backdrop-filter: blur(10px);
+}
+
+.language-switcher-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--secondary-color);
+}
+
+.language-switcher-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.25rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(123, 44, 191, 0.08), rgba(16, 185, 129, 0.08));
+}
+
+.language-button {
+    min-width: 46px;
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.language-button:hover {
+    transform: translateY(-1px);
+    background: rgba(123, 44, 191, 0.1);
+}
+
+.language-button.active {
+    background: linear-gradient(135deg, #7B2CBF 0%, #10B981 100%);
+    color: #FFFFFF;
+    box-shadow: 0 8px 18px rgba(123, 44, 191, 0.28);
 }
 
 .header.scrolled .logo-icon {
@@ -2747,6 +2799,25 @@ a.btn-primary:not(.form-card .btn-primary) {
     .header {
         padding: 0.75rem 0;
     }
+
+    .header-container {
+        gap: 0.9rem;
+    }
+
+    .language-switcher {
+        gap: 0.55rem;
+        padding: 0.4rem 0.45rem 0.4rem 0.65rem;
+    }
+
+    .language-switcher-label {
+        font-size: 0.72rem;
+    }
+
+    .language-button {
+        min-width: 40px;
+        padding: 0.45rem 0.65rem;
+        font-size: 0.78rem;
+    }
     
     .logo-icon {
         height: 45px;
@@ -3134,6 +3205,31 @@ a.btn-primary:not(.form-card .btn-primary) {
     /* ===== HEADER ===== */
     .header {
         padding: 0.625rem 0;
+    }
+
+    .header-container {
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .language-switcher {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+    }
+
+    .language-switcher-label {
+        text-align: center;
+    }
+
+    .language-switcher-group {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .language-button {
+        min-width: 38px;
+        padding: 0.45rem 0.55rem;
     }
     
     .logo-icon {

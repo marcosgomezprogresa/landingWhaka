@@ -239,6 +239,416 @@ const landingConfig = {
     whatsapp: '+34678513800'
 };
 
+landingConfig.meta = {
+    title: 'Whaka Açaí - Distribuidor de Açaí Brasileño',
+    description: 'Import açaí premium - Açaí supplier y distributor internacional. Wholesale açaí para retail y horeca. Açaí private label. Fabricación y suministro de superfrutas para distribuidores.',
+    keywords: 'import açaí, açaí supplier, wholesale açaí, açaí distributor, açaí private label, açaí retail, açaí horeca, superfrutas distribuidor'
+};
+
+landingConfig.ui = {
+    languageLabel: 'Idioma',
+    form: {
+        nameLabel: 'Nombre completo *',
+        emailLabel: 'Email *',
+        privacyLabel: 'Acepto la política de privacidad *',
+        notePrefix: 'Al enviar este formulario aceptas nuestra',
+        noteLink: 'política de privacidad',
+        phoneText: 'O llámanos directamente:',
+        successTitle: '¡Gracias por tu interés!',
+        successText: 'Nos pondremos en contacto contigo en menos de 24 horas.',
+        submitError: 'Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.'
+    },
+    privateLabel: {
+        title: 'Desarrollo de Marca Propia (Private Label)',
+        description: 'Desarrollamos productos para marcas propias, ofreciendo a redes varejistas y distribuidores la misma calidad, tecnología y capacidad industrial aplicada a las líneas Whaka.',
+        features: [
+            'Açaí y superfrutas en diversos formatos',
+            'Especificaciones adaptadas a cada cliente',
+            'Confiabilidad y alto rendimiento en gran escala'
+        ],
+        buttonText: 'Solicita más información →',
+        imageAlt: 'Private Label - Productos Marca Propia',
+        badgeText: '+50 marcas confían en nosotros'
+    },
+    footer: {
+        navTitle: 'Navegación',
+        navHome: 'Inicio',
+        navCategories: 'Categorías',
+        navBenefits: 'Beneficios',
+        navTestimonials: 'Testimonios',
+        contactTitle: 'Contacto',
+        emailLabel: 'Email:',
+        phoneLabel: 'Tel:',
+        rights: 'Todos los derechos reservados.',
+        legalNotice: 'Aviso Legal',
+        privacyPolicy: 'Política de Privacidad',
+        cookiePolicy: 'Política de Cookies'
+    },
+    cookies: {
+        title: 'Cookies',
+        text: 'Utilizamos cookies para mejorar tu experiencia. Al continuar navegando, aceptas nuestro uso de cookies.',
+        accept: 'Aceptar',
+        reject: 'Rechazar',
+        link: 'Política de Cookies'
+    },
+    validation: {
+        required: 'Este campo es obligatorio',
+        email: 'Email no válido',
+        phone: 'Teléfono no válido',
+        privacy: 'Debes aceptar la política de privacidad'
+    }
+};
+
+const landingTranslations = {
+    es: landingConfig,
+    de: {
+        ...landingConfig,
+        meta: {
+            title: 'Whaka Açaí - Premium-Açaí für Vertrieb und HoReCa',
+            description: 'Premium-Açaí für Retail und HoReCa. Internationaler Hersteller und Lieferant von Açaí und Superfrüchten für Distributoren, Einzelhandel und Eigenmarken.',
+            keywords: 'Premium-Açaí, Açaí Lieferant, Açaí Großhandel, Retail, HoReCa, Private Label, Superfrüchte'
+        },
+        hero: {
+            ...landingConfig.hero,
+            title: 'Premium-Açaí vertreiben',
+            highlight: 'in Ihrem Markt',
+            subtitle: 'Wir produzieren verzehrfertige Sorbets aus Açaí und Superfrüchten für Retail und HoReCa. Wir arbeiten mit Distributoren, Einzelhändlern und Ketten zusammen, die Produkte mit hoher Nachfrage und attraktiven Margen in ihrem Markt einführen möchten.',
+            stats: [
+                {
+                    number: '100%',
+                    label: 'Zertifiziertes Bio-Açaí'
+                },
+                {
+                    number: '+20 Jahre',
+                    label: 'Erfahrung im Markt'
+                },
+                {
+                    number: '+20 Länder',
+                    label: 'Premium-Açaí im Vertrieb'
+                }
+            ],
+            checks: [
+                'Produktbereit für Retail und HoReCa',
+                'Internationale Herstellung und Lieferung',
+                'Private-Label-Optionen'
+            ]
+        },
+        form: {
+            title: 'Katalog und Vertriebskonditionen anfordern',
+            subtitle: 'Kommerzielle Informationen in weniger als 24 Stunden',
+            buttonText: 'Katalog anfordern →'
+        },
+        sections: {
+            ...landingConfig.sections,
+            categories: {
+                title: 'Formate für jeden Vertriebskanal',
+                subtitle: 'Produkte für Retail, Gourmet und HoReCa mit attraktiven Margen'
+            },
+            benefits: {
+                title: 'Zertifizierungen',
+                subtitle: 'Unsere Produkte verfügen über internationale Zertifizierungen, die Qualität, Herkunft und die Einhaltung strengster Lebensmittelsicherheitsstandards garantieren.'
+            },
+            testimonials: {
+                title: 'Was unsere Partner sagen'
+            },
+            ctaFinal: {
+                title: 'Interessiert daran, Açaí in Ihrem Markt zu vertreiben?',
+                text: 'Fordern Sie den vollständigen Katalog und die Vertriebsinformationen an.',
+                subtitle: 'Wir arbeiten mit Distributoren, Importeuren, Einzelhändlern und HoReCa-Ketten.',
+                buttonText: 'Katalog und Preise anfordern →'
+            }
+        },
+        categories: [
+            {
+                title: 'Retail-fertige Formate',
+                description: 'Produkte für Supermärkte und Fachgeschäfte. Optimierte Formate zur Maximierung der Rotation am Point of Sale durch die Kombination aus Rentabilität, wettbewerbsfähigen Preisen und einer gesunden Positionierung.',
+                image: 'images/productossabores.png',
+                items: [
+                    'Einzelformate, direkt verkaufsfertig',
+                    'Bereits erfolgreich in internationalen Märkten',
+                    'Für den Retail-Vertrieb vorbereitet',
+                    'Schnelle Rotation und attraktive Margen'
+                ]
+            },
+            {
+                title: 'Gourmet-Sortiment',
+                description: 'Formate für eine hochwertigere und gesundheitsorientierte Positionierung. Dazu gehören Optionen mit höherem Nährwert und Kombinationen mit anderen Superfrüchten.',
+                image: 'images/premiunimagen.png',
+                items: [
+                    'Höherer Nährwert',
+                    'Kombinationen mit anderen Superfrüchten',
+                    'Gourmet-Positionierung',
+                    'Ideal für Händler, die sich differenzieren möchten'
+                ]
+            },
+            {
+                title: 'Professionelle HoReCa-Formate',
+                description: 'Größere Verpackungseinheiten für Gastronomie, Cafés, Hotels und Foodservice. Entwickelt, um Kosten und Abläufe im HoReCa-Kanal zu optimieren.',
+                image: 'images/horecaimagen.png',
+                items: [
+                    'Perfekt für Açaí-Bowls',
+                    'Ideal für Smoothies und Shakes',
+                    'Gesunde Desserts und Healthy-Menüs',
+                    'Optimieren Kosten im Foodservice'
+                ]
+            }
+        ],
+        testimonials: [
+            {
+                name: 'Laura G.',
+                role: 'Inhaberin',
+                company: 'Juice Bar - Madrid',
+                text: 'Ich habe vor zwei Jahren angefangen, mit Waka zu arbeiten, als Açaí-Bowls noch ein Nischenprodukt waren. Heute machen sie 40 % meines Umsatzes aus. Die Qualität ist unglaublich, der Geschmack unvergleichlich und meine Kunden sind begeistert. Waka unterstützte mich bei allem: Rezepten, Schulungen und sogar beim Design der Speisekarte.',
+                rating: 5
+            },
+            {
+                name: 'Roberto M.',
+                role: 'Einkaufsleiter',
+                company: 'Premium-Supermarktkette - Mexiko',
+                text: 'Wir führten die Açaí-Linie von Waka in acht Pilotfilialen ein. Nach drei Monaten skalierten wir auf die gesamte Kette mit 50 Standorten. Das Produkt verkauft sich hervorragend. Die Margen sind ausgezeichnet und das Waka-Team ist äußerst professionell. Die beste geschäftliche Entscheidung des Jahres.',
+                rating: 5
+            },
+            {
+                name: 'Sofia R.',
+                role: 'Chefköchin & Inhaberin',
+                company: 'Healthy Café - Barcelona',
+                text: 'Ich habe mehrere Açaí-Lieferanten getestet, bevor ich Waka gefunden habe. Der Unterschied ist enorm: intensivere Farbe, kräftigerer Geschmack und perfekte Textur. Meine Kunden merken die Premiumqualität. Außerdem ist der Support von Waka hervorragend und immer erreichbar.',
+                rating: 5
+            }
+        ],
+        footer: {
+            ...landingConfig.footer,
+            description: 'Premium-Bio-Açaí aus dem Amazonas. Das Superfood, das Ihr Geschäft voranbringt.'
+        },
+        ui: {
+            languageLabel: 'Sprache',
+            form: {
+                nameLabel: 'Vollständiger Name *',
+                emailLabel: 'E-Mail *',
+                privacyLabel: 'Ich akzeptiere die Datenschutzrichtlinie *',
+                notePrefix: 'Mit dem Absenden dieses Formulars akzeptieren Sie unsere',
+                noteLink: 'Datenschutzrichtlinie',
+                phoneText: 'Oder rufen Sie uns direkt an:',
+                successTitle: 'Vielen Dank für Ihr Interesse!',
+                successText: 'Wir werden uns in weniger als 24 Stunden bei Ihnen melden.',
+                submitError: 'Beim Senden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.'
+            },
+            privateLabel: {
+                title: 'Entwicklung von Eigenmarken (Private Label)',
+                description: 'Wir entwickeln Produkte für Eigenmarken und bieten Einzelhändlern und Distributoren dieselbe Qualität, Technologie und industrielle Kapazität wie bei den Whaka-Linien.',
+                features: [
+                    'Açaí und Superfrüchte in verschiedenen Formaten',
+                    'An jeden Kunden angepasste Spezifikationen',
+                    'Zuverlässigkeit und hohe Leistung im großen Maßstab'
+                ],
+                buttonText: 'Weitere Informationen anfordern →',
+                imageAlt: 'Private Label - Eigenmarkenprodukte',
+                badgeText: '+50 Marken vertrauen uns'
+            },
+            footer: {
+                navTitle: 'Navigation',
+                navHome: 'Startseite',
+                navCategories: 'Kategorien',
+                navBenefits: 'Vorteile',
+                navTestimonials: 'Testimonials',
+                contactTitle: 'Kontakt',
+                emailLabel: 'E-Mail:',
+                phoneLabel: 'Tel.:',
+                rights: 'Alle Rechte vorbehalten.',
+                legalNotice: 'Rechtlicher Hinweis',
+                privacyPolicy: 'Datenschutzrichtlinie',
+                cookiePolicy: 'Cookie-Richtlinie'
+            },
+            cookies: {
+                title: 'Cookies',
+                text: 'Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch das Weitersurfen akzeptieren Sie unsere Cookie-Nutzung.',
+                accept: 'Akzeptieren',
+                reject: 'Ablehnen',
+                link: 'Cookie-Richtlinie'
+            },
+            validation: {
+                required: 'Dieses Feld ist erforderlich',
+                email: 'Ungültige E-Mail-Adresse',
+                phone: 'Ungültige Telefonnummer',
+                privacy: 'Sie müssen die Datenschutzrichtlinie akzeptieren'
+            }
+        }
+    },
+    nl: {
+        ...landingConfig,
+        meta: {
+            title: 'Whaka Açaí - Premium Açaí voor retail en horeca',
+            description: 'Premium açaí voor retail en horeca. Internationale productie en levering van açaí en superfruits voor distributeurs, retailers en private label.',
+            keywords: 'premium açaí, açaí leverancier, groothandel açaí, retail, horeca, private label, superfruits'
+        },
+        hero: {
+            ...landingConfig.hero,
+            title: 'Distribueer Premium Açaí',
+            highlight: 'in jouw markt',
+            subtitle: 'Wij produceren açaí- en superfruit-sorbets, klaar voor retail en horeca. We werken met distributeurs, retailers en ketens die producten met hoge vraag en aantrekkelijke marges in hun markt willen introduceren.',
+            stats: [
+                {
+                    number: '100%',
+                    label: 'Gecertificeerde biologische açaí'
+                },
+                {
+                    number: '+20 jaar',
+                    label: 'Ervaring in de markt'
+                },
+                {
+                    number: '+20 landen',
+                    label: 'Premium açaí in distributie'
+                }
+            ],
+            checks: [
+                'Product klaar voor retail en horeca',
+                'Internationale productie en levering',
+                'Private-Label-opties'
+            ]
+        },
+        form: {
+            title: 'Ontvang de catalogus en distributievoorwaarden',
+            subtitle: 'Commerciële informatie binnen 24 uur',
+            buttonText: 'Catalogus aanvragen →'
+        },
+        sections: {
+            ...landingConfig.sections,
+            categories: {
+                title: 'Formaten voor elk distributiekanaal',
+                subtitle: 'Producten voor retail, gourmet en horeca met concurrerende marges'
+            },
+            benefits: {
+                title: 'Certificeringen',
+                subtitle: 'Onze producten beschikken over internationale certificeringen die kwaliteit, herkomst en naleving van de strengste voedselveiligheidsnormen garanderen.'
+            },
+            testimonials: {
+                title: 'Wat onze partners zeggen'
+            },
+            ctaFinal: {
+                title: 'Geïnteresseerd in het distribueren van Açaí in jouw markt?',
+                text: 'Vraag de volledige catalogus en distributie-informatie aan.',
+                subtitle: 'We werken met distributeurs, importeurs, retailers en horecaketens.',
+                buttonText: 'Catalogus en prijzen aanvragen →'
+            }
+        },
+        categories: [
+            {
+                title: 'Retailklare formaten',
+                description: 'Producten ontworpen voor supermarkten en speciaalzaken. Geoptimaliseerde formaten om de rotatie op het verkooppunt te maximaliseren, met een combinatie van winstgevendheid, concurrerende prijzen en een gezonde positionering.',
+                image: 'images/productossabores.png',
+                items: [
+                    'Individuele formaten klaar voor verkoop',
+                    'Reeds succesvol in internationale markten',
+                    'Voorbereid voor retaildistributie',
+                    'Hoge rotatie en concurrerende marges'
+                ]
+            },
+            {
+                title: 'Gourmet-assortiment',
+                description: 'Formaten ontwikkeld voor een meer premium en gezonde positionering. Inclusief opties met hogere voedingswaarde en combinaties met andere superfruits.',
+                image: 'images/premiunimagen.png',
+                items: [
+                    'Hogere voedingswaarde',
+                    'Combinaties met andere superfruits',
+                    'Gourmetpositionering',
+                    'Ideaal voor retailers die zich willen onderscheiden'
+                ]
+            },
+            {
+                title: 'Professionele horeca-formaten',
+                description: 'Grotere verpakkingen voor restaurants, cafés, hotels en foodservice. Ontwikkeld om kosten en operationele processen in horeca te optimaliseren.',
+                image: 'images/horecaimagen.png',
+                items: [
+                    'Perfect voor açaí-bowls',
+                    'Ideaal voor smoothies en shakes',
+                    'Gezonde desserts en healthy menu’s',
+                    'Optimaliseren kosten in foodservice'
+                ]
+            }
+        ],
+        testimonials: [
+            {
+                name: 'Laura G.',
+                role: 'Eigenaresse',
+                company: 'Juice Bar - Madrid',
+                text: 'Ik begon twee jaar geleden met Waka toen açaí-bowls nog een niche waren. Nu vertegenwoordigen ze 40% van mijn omzet. De kwaliteit is ongelooflijk, de smaak ongeëvenaard en mijn klanten zijn enthousiast. Waka hielp me met alles: recepten, training en zelfs het ontwerp van het menu.',
+                rating: 5
+            },
+            {
+                name: 'Roberto M.',
+                role: 'Inkoopmanager',
+                company: 'Premium supermarktketen - Mexico',
+                text: 'We lanceerden de açaí-lijn van Waka in acht pilotwinkels. Binnen drie maanden schaalden we op naar de volledige keten met 50 locaties. Het product vliegt van de schappen. De marges zijn uitstekend en het Waka-team is zeer professioneel. De beste commerciële beslissing van het jaar.',
+                rating: 5
+            },
+            {
+                name: 'Sofia R.',
+                role: 'Chef & Eigenaresse',
+                company: 'Healthy Café - Barcelona',
+                text: 'Ik probeerde verschillende açaí-leveranciers voordat ik Waka vond. Het verschil is enorm: intensere kleur, sterkere smaak en perfecte textuur. Mijn klanten merken de premiumkwaliteit. Bovendien is de ondersteuning van Waka geweldig en altijd beschikbaar.',
+                rating: 5
+            }
+        ],
+        footer: {
+            ...landingConfig.footer,
+            description: 'Premium biologische açaí uit het Amazonegebied. De superfood die jouw bedrijf vooruithelpt.'
+        },
+        ui: {
+            languageLabel: 'Taal',
+            form: {
+                nameLabel: 'Volledige naam *',
+                emailLabel: 'E-mail *',
+                privacyLabel: 'Ik accepteer het privacybeleid *',
+                notePrefix: 'Door dit formulier te verzenden accepteer je ons',
+                noteLink: 'privacybeleid',
+                phoneText: 'Of bel ons direct:',
+                successTitle: 'Bedankt voor je interesse!',
+                successText: 'We nemen binnen 24 uur contact met je op.',
+                submitError: 'Er is een fout opgetreden bij het verzenden van het formulier. Probeer het opnieuw.'
+            },
+            privateLabel: {
+                title: 'Ontwikkeling van huismerken (Private Label)',
+                description: 'Wij ontwikkelen producten voor huismerken en bieden retailers en distributeurs dezelfde kwaliteit, technologie en industriële capaciteit als de Whaka-lijnen.',
+                features: [
+                    'Açaí en superfruits in diverse formaten',
+                    'Specificaties aangepast aan elke klant',
+                    'Betrouwbaarheid en hoge prestaties op grote schaal'
+                ],
+                buttonText: 'Meer informatie aanvragen →',
+                imageAlt: 'Private Label - Huismerkproducten',
+                badgeText: '+50 merken vertrouwen op ons'
+            },
+            footer: {
+                navTitle: 'Navigatie',
+                navHome: 'Home',
+                navCategories: 'Categorieën',
+                navBenefits: 'Voordelen',
+                navTestimonials: 'Testimonials',
+                contactTitle: 'Contact',
+                emailLabel: 'E-mail:',
+                phoneLabel: 'Tel:',
+                rights: 'Alle rechten voorbehouden.',
+                legalNotice: 'Juridische kennisgeving',
+                privacyPolicy: 'Privacybeleid',
+                cookiePolicy: 'Cookiebeleid'
+            },
+            cookies: {
+                title: 'Cookies',
+                text: 'We gebruiken cookies om je ervaring te verbeteren. Door verder te surfen accepteer je ons gebruik van cookies.',
+                accept: 'Accepteren',
+                reject: 'Weigeren',
+                link: 'Cookiebeleid'
+            },
+            validation: {
+                required: 'Dit veld is verplicht',
+                email: 'Ongeldig e-mailadres',
+                phone: 'Ongeldig telefoonnummer',
+                privacy: 'Je moet het privacybeleid accepteren'
+            }
+        }
+    }
+};
+
 // ========================================
 // EJEMPLOS DE CONFIGURACIÓN PARA CLIENTES ESPECÍFICOS
 // ========================================
