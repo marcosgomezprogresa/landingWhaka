@@ -31,6 +31,33 @@ function initializeLanding() {
     setupHeaderScroll();
     setupGA4Tracking();
     setCurrentYear();
+    setupLanguageSwitcherScrollHide();
+}
+// Oculta el selector de idioma al hacer scroll hacia abajo y lo muestra al volver arriba
+function setupLanguageSwitcherScrollHide() {
+    const switcher = document.querySelector('.language-switcher');
+    if (!switcher) return;
+
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    function onScroll() {
+        if (!ticking) {
+            window.requestAnimationFrame(() => {
+                const currentScroll = window.scrollY;
+                if (currentScroll > 60) {
+                    switcher.classList.add('hide-on-scroll');
+                } else {
+                    switcher.classList.remove('hide-on-scroll');
+                }
+                lastScrollY = currentScroll;
+                ticking = false;
+            });
+            ticking = true;
+        }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
 }
 
 // ========================================
