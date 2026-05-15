@@ -300,6 +300,170 @@ landingConfig.ui = {
 };
 
 const landingTranslations = {
+    en: {
+        ...landingConfig,
+        meta: {
+            title: 'Whaka Açaí - Premium Açaí Supplier for Retail & HoReCa',
+            description: 'Premium açaí for retail and HoReCa. International manufacturer and supplier of açaí and superfruits for distributors, retailers, and private label. Wholesale and custom solutions.',
+            keywords: 'premium açaí, açaí supplier, wholesale açaí, retail, horeca, private label, superfruits'
+        },
+        hero: {
+            ...landingConfig.hero,
+            title: 'Distribute Premium Açaí',
+            highlight: 'in your Market',
+            subtitle: 'We manufacture ready-to-eat açaí and superfruit sorbets for retail and HoReCa. We work with distributors, retailers, and chains looking to introduce high-demand, high-margin products in their market.',
+            stats: [
+                { number: '100%', label: 'Certified Organic Açaí' },
+                { number: '+20 years', label: 'Market Experience' },
+                { number: '+20 countries', label: 'Distributing Premium Açaí' }
+            ],
+            checks: [
+                'Ready for retail and HoReCa',
+                'International manufacturing and supply',
+                'Private Label options'
+            ]
+        },
+        form: {
+            title: 'Get the Catalogue and Distribution Terms',
+            subtitle: 'Commercial information in less than 24h',
+            buttonText: 'Request Catalogue →'
+        },
+        sections: {
+            ...landingConfig.sections,
+            categories: {
+                title: 'Formats for Every Distribution Channel',
+                subtitle: 'Products ready for retail, gourmet, and HoReCa with competitive margins'
+            },
+            benefits: {
+                title: 'Certifications',
+                subtitle: 'Our products have international certifications that guarantee quality, origin, and compliance with the highest food safety standards.'
+            },
+            testimonials: {
+                title: 'What our partners say'
+            },
+            ctaFinal: {
+                title: 'Interested in Distributing Açaí in your Market?',
+                text: 'Request the full catalogue and distribution information',
+                subtitle: 'We work with distributors, importers, retailers, and HoReCa chains',
+                buttonText: 'Request Catalogue & Prices'
+            }
+        },
+        categories: [
+            {
+                title: 'Retail-ready formats',
+                description: 'Products designed for supermarkets and specialty stores. Formats optimized to maximize turnover at the point of sale, combining profitability, competitive pricing, and a healthy positioning.',
+                image: 'images/productossabores.png',
+                items: [
+                    'Individual formats ready for sale',
+                    'Already successful in international markets',
+                    'Prepared for retail distribution',
+                    'High turnover and competitive margins'
+                ]
+            },
+            {
+                title: 'Gourmet range',
+                description: 'Formats developed for a more gourmet and healthy positioning. Includes options with higher nutritional value and combinations with other superfruits.',
+                image: 'images/premiunimagen.png',
+                items: [
+                    'Higher nutritional value',
+                    'Combinations with other superfruits',
+                    'Gourmet positioning',
+                    'Ideal for retailers seeking differentiation'
+                ]
+            },
+            {
+                title: 'Professional formats for HoReCa',
+                description: 'Larger containers designed for restaurants, cafés, hotels, and food service. Designed to optimize costs and operations in HoReCa.',
+                image: 'images/horecaimagen.png',
+                items: [
+                    'Perfect for açaí bowls',
+                    'Ideal for smoothies and shakes',
+                    'Healthy desserts and healthy menus',
+                    'Optimize costs in food service'
+                ]
+            }
+        ],
+        testimonials: [
+            {
+                name: 'Laura G.',
+                role: 'Owner',
+                company: 'Juice Bar - Madrid',
+                text: 'I started working with Waka two years ago when açaí bowls were still a niche product. Today, they make up 40% of my sales. The quality is incredible, the taste is unmatched, and my customers love it. Waka supported me with everything: recipes, training, and even menu design.',
+                rating: 5
+            },
+            {
+                name: 'Roberto M.',
+                role: 'Purchasing Manager',
+                company: 'Premium Supermarket Chain - Mexico',
+                text: 'We introduced the Waka açaí line in eight pilot stores. After three months, we scaled to the entire chain with 50 locations. The product sells extremely well. Margins are excellent and the Waka team is highly professional. Best business decision of the year.',
+                rating: 5
+            },
+            {
+                name: 'Sofia R.',
+                role: 'Chef & Owner',
+                company: 'Healthy Café - Barcelona',
+                text: 'I tried several açaí suppliers before finding Waka. The difference is huge: more intense color, stronger flavor, and perfect texture. My customers notice the premium quality. Plus, Waka’s support is excellent and always available.',
+                rating: 5
+            }
+        ],
+        footer: {
+            ...landingConfig.footer,
+            description: 'Premium organic açaí from the Amazon. The superfood that drives your business.'
+        },
+        ui: {
+            languageLabel: 'Language',
+            form: {
+                nameLabel: 'Full Name *',
+                emailLabel: 'Email *',
+                privacyLabel: 'I accept the Privacy Policy *',
+                notePrefix: 'By submitting this form you accept our',
+                noteLink: 'Privacy Policy',
+                phoneText: 'Or call us directly:',
+                successTitle: 'Thank you for your interest!',
+                successText: 'We will contact you in less than 24 hours.',
+                submitError: 'There was an error submitting the form. Please try again.'
+            },
+            privateLabel: {
+                title: 'Private Label Development',
+                description: 'We develop private label products and offer retailers and distributors the same quality, technology, and industrial capacity as the Whaka lines.',
+                features: [
+                    'Açaí and superfruits in various formats',
+                    'Specifications tailored to each client',
+                    'Reliability and high performance at scale'
+                ],
+                buttonText: 'Request more information →',
+                imageAlt: 'Private Label Products',
+                badgeText: '+50 brands trust us'
+            },
+            footer: {
+                navTitle: 'Navigation',
+                navHome: 'Home',
+                navCategories: 'Categories',
+                navBenefits: 'Benefits',
+                navTestimonials: 'Testimonials',
+                contactTitle: 'Contact',
+                emailLabel: 'Email:',
+                phoneLabel: 'Phone:',
+                rights: 'All rights reserved.',
+                legalNotice: 'Legal Notice',
+                privacyPolicy: 'Privacy Policy',
+                cookiePolicy: 'Cookie Policy'
+            },
+            cookies: {
+                title: 'Cookies',
+                text: 'We use cookies to improve your experience. By continuing to browse, you accept our use of cookies.',
+                accept: 'Accept',
+                reject: 'Reject',
+                link: 'Cookie Policy'
+            },
+            validation: {
+                required: 'This field is required',
+                email: 'Invalid email address',
+                phone: 'Invalid phone number',
+                privacy: 'You must accept the Privacy Policy'
+            }
+        }
+    },
     es: landingConfig,
     de: {
         ...landingConfig,

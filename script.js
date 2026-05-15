@@ -2,15 +2,14 @@
 // CONFIGURACIÓN Y VARIABLES GLOBALES
 // ========================================
 
-const SUPPORTED_LANGUAGES = ['es', 'nl', 'de'];
-const DEFAULT_LANGUAGE = 'es';
+const SUPPORTED_LANGUAGES = ['en'];
+const DEFAULT_LANGUAGE = 'en';
 const LANGUAGE_STORAGE_KEY = 'preferredLanguage';
 
 let currentLanguage = DEFAULT_LANGUAGE;
 
 // Esperar a que se cargue toda la configuración
 document.addEventListener('DOMContentLoaded', () => {
-    // Esperar un momento para que config.js se cargue
     setTimeout(() => {
         if (typeof landingConfig !== 'undefined') {
             initializeLanding();
@@ -23,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ========================================
 function initializeLanding() {
     setupLanguage();
-    setupLanguageSwitcher();
+    // setupLanguageSwitcher(); // Desactivado
     loadConfiguration();
     setupFormValidation();
     setupSmoothScroll();
@@ -31,33 +30,12 @@ function initializeLanding() {
     setupHeaderScroll();
     setupGA4Tracking();
     setCurrentYear();
-    setupLanguageSwitcherScrollHide();
+    // setupLanguageSwitcherScrollHide(); // Desactivado
 }
 // Oculta el selector de idioma al hacer scroll hacia abajo y lo muestra al volver arriba
 function setupLanguageSwitcherScrollHide() {
-    const switcher = document.querySelector('.language-switcher');
-    if (!switcher) return;
-
-    let lastScrollY = window.scrollY;
-    let ticking = false;
-
-    function onScroll() {
-        if (!ticking) {
-            window.requestAnimationFrame(() => {
-                const currentScroll = window.scrollY;
-                if (currentScroll > 60) {
-                    switcher.classList.add('hide-on-scroll');
-                } else {
-                    switcher.classList.remove('hide-on-scroll');
-                }
-                lastScrollY = currentScroll;
-                ticking = false;
-            });
-            ticking = true;
-        }
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
+    // Desactivado: selector de idioma oculto
+    return;
 }
 
 // ========================================
@@ -251,23 +229,15 @@ function getQueryLanguage() {
 }
 
 function setupLanguage() {
-    const queryLanguage = getQueryLanguage();
-    const storedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
-    currentLanguage = queryLanguage
-        ? normalizeLanguage(queryLanguage)
-        : (storedLanguage ? normalizeLanguage(storedLanguage) : detectBrowserLanguage());
-
+    // Forzar idioma inglés
+    currentLanguage = DEFAULT_LANGUAGE;
     localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLanguage);
+    applyLanguage(DEFAULT_LANGUAGE);
 }
 
 function setupLanguageSwitcher() {
-    document.querySelectorAll('.language-button').forEach((button) => {
-        button.addEventListener('click', () => {
-            applyLanguage(button.dataset.lang);
-        });
-    });
-
-    updateLanguageButtons();
+    // Desactivado: selector de idioma oculto
+    return;
 }
 
 function applyLanguage(language, persist = true) {
